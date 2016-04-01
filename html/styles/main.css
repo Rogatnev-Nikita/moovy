@@ -175,17 +175,20 @@ body{
 .main-content {
     padding-top: 240px;
     padding-bottom: 140px;
-    outline: 1px solid red;
 }
-
+.main-content .row {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
 .main-content__video {
     width: 340px;
     margin: 0 auto;
 }
-
 .main-content__video-play{
     width: 110px;
     height: 70px;
+    margin: 0 auto;
     padding-top: 15px;
     text-align: center;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(../images/home/video-play.jpg);
@@ -212,12 +215,6 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-left: 0;
 }
-
-
-
-.main-content__slider-navigation {
-    outline: 1px solid red;
-}
 .main-content__slider-navigation-line{
     display: block;
     text-align: center;
@@ -227,13 +224,12 @@ body{
 }
 .main-content__slider-navigation-line span:after{
     position: absolute;
+    right: 40px;
     width: 20px;
     height: 1px;
     background: rgba(255, 255, 255, 0.4);
     content: "";
 }
-
-
 .main-content__slider-navigation-line:hover span:after {
     background: rgba(255, 255, 255, 1);
 }
@@ -245,9 +241,7 @@ body{
     .main-content {
         padding-top: 45vh;
         padding-bottom: 0;
-
     }
-
     .main-content__slider-navigation {
 
     }
@@ -307,7 +301,6 @@ body{
 
 
 @media only screen and (min-width : 768px) and (min-height : 590px) {
-
     .main-footer {
         position: absolute;
         bottom: 0;

@@ -8,22 +8,101 @@
   	<meta name="keywords" content="" />
   	<meta name="author" content="Rogatnev Nikita" />
   	
-	<title></title>
+	<title>MOOVY IN THEATRES NOVEMBER 10</title>
 	<!-- Connect favicon.ico and apple-touch-icon.png here -->
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./styles/main.css" />
 </head>
 
 <body>
 
-	<!-- MAIN CONTENT -->
-    <main class="">
+	<!-- HRADER -->
+    <header class="main-header container-fluid">
+    <div class="row row-eq-height">
+        <nav class="col-xs-2 col-sm-1">
+            <a class="main-header__hamburger" data-toggle="collapse" data-target="#nemu"><span class="main-header__hamburger-icon"></span></a>
+        </nav>
+        <div class="col-xs-10 col-sm-11">
+            <div class="container-fluid">
+                <div class="row row-eq-height">
+                    <div class="col-xs-12 col-sm-5">
+                        <h1 class="main-header__logo"><a href="./index.html">MOOVY</a></h1>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <span class="main-header__description">IN THEATRES NOVEMBER 10</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+	<!-- HRADER END -->
 
+	<!-- MENU DROPDOWN -->	
+    <div class="menu">
+        <ul class="menu__items collapse" id="nemu">
+            <li class="menu__item active"><a href="#">HOME</a></li>
+            <li class="menu__item"><a href="#">SYNOPSIS</a></li>
+            <li class="menu__item"><a href="#">CAST AND CREW</a></li>
+            <li class="menu__item"><a href="#">VIDEO</a></li>
+            <li class="menu__item"><a href="#">GALLERY</a></li>
+            <li class="menu__item"><a href="#">NEWS</a></li>
+        </ul>
+    </div>
+    <!-- MENU DROPDOWN END -->	
+	
+	
+	<!-- MAIN CONTENT -->
+    <main class="main-content container-fluid">
+        <div class="row row-eq-height">
+            <div class="main-content__video-block col-xs-10 col-sm-3 col-sm-offset-5">
+
+                <div class="main-content__video row-eq-height">
+                        <div class="main-content__video-play">
+                            video
+                        </div>
+                        <div class="main-content__video-text hidden-xs">
+                            watch the official trailer
+                        </div>
+                </div>
+                
+            </div>
+            <div class="main-content__slider-navigation col-xs-2 col-sm-2 col-sm-offset-2">
+                <a href="#" class="main-content__slider-navigation-line main-content__slider-navigation-line--active"><span>1</span></a>
+                <a href="#" class="main-content__slider-navigation-line"><span>2</span></a>
+                <a href="#" class="main-content__slider-navigation-line"><span>3</span></a>
+                <a href="#" class="main-content__slider-navigation-line"><span>4</span></a>
+                <a href="#" class="main-content__slider-navigation-line"><span>5</span></a>
+                <a href="#" class="main-content__slider-navigation-line"><span>6</span></a>
+                <a href="#" class="main-content__slider-navigation-line"><span>7</span></a>
+            </div>
+        </div>
     </main>
 	<!-- MAIN CONTENT END -->
 
+	<!-- FOOTER -->
+    <footer class="main-footer container-fluid">
+        <div class="row row-eq-height">
+            <div class="main-footer__legal col-xs-11 col-sm-11">
+                <p><a href="#">LEARN MORE</a> <a href="#">TERMS AND CONDITIONS</a> <a href="#">PRIVACY POLICY</a><br>
+                COPYRIGHT 2015 MOOVY BY VBN PREMIUM THEMES.<br>
+                ALL RIGHTS RESERVED. PROPERTY OF VBN.</p>
+                <img src="./images/home/mpaa.png">
+            </div>
+            <div class="main-footer__icons col-xs-1 col-sm-1">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-share-alt"></i></a>
+                <a href="#"><i class="fa fa-volume-up"></i></a>
+            </div>        
+        </div>
+    </div>
+	<!-- FOOTER END  -->
+
 	<!-- SCRIPTS -->
 	<script src="./scripts/jquery.js" async></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<script src="./scripts/main.js" async></script>
 	<!-- SCRIPTS END -->
 

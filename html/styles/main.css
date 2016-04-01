@@ -47,6 +47,7 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #3a3a3a;
+    z-index: 2;
 }
 
 .main-header__hamburger,

@@ -329,7 +329,6 @@ body{
 /* ------------------------------------------ */
 /*             06 - MODALS
 /* ------------------------------------------ */
-
 .modal-box {
     margin: 0 auto;
     width: 100%;
@@ -337,6 +336,9 @@ body{
     padding: 20px 0 60px;
     position: relative;
     border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.modal-backdrop{
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .modal-box h2{
@@ -385,11 +387,6 @@ body{
 .modal-box__close button:after {
     transform: rotate(-45deg);
 }
-
-
-
-
-
 
 .modal-box__follow-icons,
 .modal-box__share-icons{
@@ -478,11 +475,6 @@ body{
     -moz-background-clip: padding;
     background-clip: padding-box;
 }
-
-
-
-
-
 @media only screen and (min-width : 768px) {
     .modal-box {
         width: 460px;
@@ -508,6 +500,7 @@ body{
         align-content: center;
         text-align: center;
         flex-wrap: nowrap;
+        margin-left: -15px;
     }
     .modal-box__follow-icon,
     .modal-box__share-icon{
@@ -533,6 +526,15 @@ body{
         text-decoration: none;
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 

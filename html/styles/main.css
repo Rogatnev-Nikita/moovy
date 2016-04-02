@@ -26,9 +26,27 @@ Tags:
 /* AquaGrotesque for logo and logo description */
 @font-face {
     font-family: "AquaGrotesque"; 
-    src:
+    src: 
         url("../fonts/aqua.woff2") format("woff2"),
         url("../fonts/aqua.woff") format("woff"),
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Secondary font - Moon light and bold */
+@font-face {
+    font-family: 'Moon-Light';
+    src: 
+        url('../fonts/MoonLight.woff2') format('woff2'),
+        url('../fonts/MoonLight.woff') format('woff'),
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Moon-Bold';
+    src: 
+        url('../fonts/MoonBold.woff2') format('woff2'),
+        url('../fonts/MoonBold.woff') format('woff'),
     font-weight: normal;
     font-style: normal;
 }

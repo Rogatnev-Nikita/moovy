@@ -55,7 +55,7 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid #3a3a3a;
-    z-index: 2;
+    z-index: 1041;
 }
 
 .main-header__hamburger,
@@ -69,7 +69,7 @@ body{
     width: 30px;
     height:28px;
     margin-left: 25px;
-    margin-top: 2px;
+    margin-top: 12px;
 }
 .main-header__hamburger-icon {
     position: relative;
@@ -86,6 +86,12 @@ body{
         0 24px 0 0 rgba(255, 255, 255, 0.4);
 }
 .main-header__hamburger:hover .main-header__hamburger-icon:before{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 
+        0 12px 0 0 rgba(255, 255, 255, 1),
+        0 24px 0 0 rgba(255, 255, 255, 1);
+}
+.main-header__hamburger--active .main-header__hamburger-icon:before{
     background: rgba(255, 255, 255, 1);
     box-shadow: 
         0 12px 0 0 rgba(255, 255, 255, 1),
@@ -119,6 +125,9 @@ body{
         align-items: center;
         align-content: center;
     }
+    .main-header__hamburger{
+        margin-top: 2px;
+    }
 }
 
 
@@ -130,13 +139,11 @@ body{
 .menu {
     position: fixed;
     margin-top: 150px;
-    z-index: 2;
+    z-index: 1041;
 }
-
 .menu__items {
     list-style-type: none;
 }
-
 .menu__item {
     position: relative;
     font-size: 12px;
@@ -228,16 +235,12 @@ body{
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-left: 0;
 }
-
-
 .modal-box__video-wrapper iframe,
 .modal-box__video-wrapper video{
     width: 100%;
     max-width: 100%;
     height: auto;
 }
-
-
 .main-content__slider-navigation-line{
     display: block;
     text-align: center;
@@ -259,7 +262,6 @@ body{
 .main-content__slider-navigation-line--active span:after {
     background: rgba(255, 255, 255, 1);
 }
-
 @media only screen and (min-width : 768px) {
     .main-content {
         padding-top: 45vh;
@@ -281,10 +283,10 @@ body{
     width: 100%;
     padding: 40px;
     position: relative;
-    
-    outline: 1px solid green;
 }
-
+.main-footer .row-eq-height{
+    align-items: flex-end;
+}
 .main-footer__legal a,
 .main-footer__legal a:hover,
 .main-footer__legal a:active{
@@ -294,13 +296,13 @@ body{
 .main-footer__legal a{
     font-size: 8px;
     color: rgba(255, 255, 255, 0.4);
-
 }
 .main-footer__legal a:hover{
     color: rgba(255, 255, 255, 1);
 }
-
-
+.main-footer__legal p{
+    margin-top: 25px;
+}
 .main-footer__legal img {
     margin-top: 20px;
 }
@@ -310,39 +312,49 @@ body{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content:space-between;
-    
     position: absolute;
-    width: 150px;
+    min-width: 150px;
     right: 40px;
     bottom: 40px;
-    
-    outline: 1px solid red;
 }
 .main-footer__icons button{
-    outline: none;
+    padding: 0;
     background: transparent;
     border: 0;
     color: rgba(255, 255, 255, 1);
     text-decoration: none;
+    text-align: right;
+    outline: none;
 }
-
 .main-footer__icons button:hover,
 .main-footer__icons button:active {
     color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
 }
+.main-footer__legal .main-footer__legal-toggle {
+    font-size: 12px;
+    text-transform: uppercase;
+}
 @media only screen and (min-width : 768px) {
     .main-footer__icons{
         flex-direction: column;
+        position: initial;
+    }
+    .main-footer__icons button{
+        margin-top: 45px;
+    }
+    .main-footer__icons button:first-child{
+        margin-top:0;
+    }
+    #legal.main-footer__legal-hidden{
+        display: block;
     }
 }
-
-
-
 @media only screen and (min-width : 768px) and (min-height : 590px) {
     .main-footer {
         position: absolute;
         bottom: 0;
+        min-width: auto;
     }
 }
 
@@ -385,13 +397,12 @@ body{
     border: 0;
     outline: none;
 }
-
 .modal-box__close button:before,
 .modal-box__close button:after {
     position: absolute;
     top: 0;
     left: 15px;
-    content: ' ';
+    content: " ";
     height: 33px;
     width: 2px;
     background: rgba(255, 255, 255, 0.5);
@@ -399,7 +410,6 @@ body{
 .modal-box__close button:hover {
     background: transparent;
 }
-
 .modal-box__close:hover button:before,
 .modal-box__close:hover button:after{
     background: rgba(255, 255, 255, 1);
@@ -411,7 +421,6 @@ body{
 .modal-box__close button:after {
     transform: rotate(-45deg);
 }
-
 .modal-box__follow-icons,
 .modal-box__share-icons{
     width: 100%;

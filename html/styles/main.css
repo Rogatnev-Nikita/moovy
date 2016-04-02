@@ -36,19 +36,20 @@ body{
 .home-slider{
     width: 100%;
     min-width: 380px;
-    height: 100%;
-    height: 100vh;
     min-height: 100vh;
+    
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 @media only screen and (max-height : 590px) {
-    body{
+    body,
+    .home-slider{
         height: 100%;
     }
 }
 
 @media only screen and (min-width : 768px) {
-    body{
+    body,
+    .home-slider{
         background-attachment: scroll;
     }
 }
@@ -181,6 +182,8 @@ body{
     text-decoration: none;
 }
 .menu__item a{
+    padding: 17.5px;
+    padding-left: 0;
     color: rgba(255, 255, 255, 0.4);
 }
 .menu__item a:hover,

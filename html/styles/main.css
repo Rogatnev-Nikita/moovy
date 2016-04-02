@@ -20,9 +20,12 @@ Tags:
 /* ------------------------------------------ */
 body{
     width: 100%;
+    min-width: 380px;
     height: 100%;
     height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/home/home__bg.jpg);
+    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,6 +39,11 @@ body{
     }
 }
 
+@media only screen and (min-width : 768px) {
+    body{
+        background-attachment: scroll;
+    }
+}
 
 
 /* ------------------------------------------ */
@@ -175,7 +183,7 @@ body{
 /*             04 - MAIN CONTENT
 /* ------------------------------------------ */
 .main-content {
-    padding-top: 240px;
+    padding-top: 40vh;
     padding-bottom: 140px;
 }
 .main-content .row {
@@ -272,7 +280,8 @@ body{
 .main-footer {
     width: 100%;
     padding: 40px;
-
+    position: relative;
+    
     outline: 1px solid green;
 }
 
@@ -297,7 +306,17 @@ body{
 }
 .main-footer__icons {
     font-size: 20px;
-    text-align: right;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    
+    position: absolute;
+    width: 150px;
+    right: 40px;
+    bottom: 40px;
+    
+    outline: 1px solid red;
 }
 .main-footer__icons button{
     outline: none;
@@ -313,7 +332,9 @@ body{
     text-decoration: none;
 }
 @media only screen and (min-width : 768px) {
-
+    .main-footer__icons{
+        flex-direction: column;
+    }
 }
 
 
@@ -341,7 +362,9 @@ body{
 .modal-backdrop{
     background-color: rgba(0, 0, 0, 0.75);
 }
-
+.modal-backdrop.in{
+    opacity: .8;
+}
 .modal-box h2{
     text-align: center;
     font-size: 18px;

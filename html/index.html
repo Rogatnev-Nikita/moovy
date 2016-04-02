@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=0.8, user-scalable=no" />
 	<meta name="description" content="" />
   	<meta name="keywords" content="" />
   	<meta name="author" content="Rogatnev Nikita" />
@@ -11,39 +11,49 @@
 	<title>MOOVY IN THEATRES NOVEMBER 10</title>
 	<!-- Connect favicon.ico and apple-touch-icon.png here -->
 
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="./styles/main.css" />
 </head>
 
 <body>
 
+<!-- HOME SLIDER CONTAINER -->
+<div class="home-slider">
+
 	<!-- HRADER -->
     <header class="main-header container-fluid">
-    <div class="row row-eq-height">
-        <nav class="col-xs-2 col-sm-1">
-            <a class="main-header__hamburger" data-toggle="collapse" data-target="#nemu"><span class="main-header__hamburger-icon"></span></a>
-        </nav>
-        <div class="col-xs-10 col-sm-11">
-            <div class="container-fluid">
-                <div class="row row-eq-height">
-                    <div class="col-xs-12 col-sm-5">
-                        <h1 class="main-header__logo"><a href="./index.html">MOOVY</a></h1>
-                    </div>
-                    <div class="col-xs-12 col-sm-7">
-                        <span class="main-header__description">IN THEATRES NOVEMBER 10</span>
+        <div class="row row-eq-height">
+    
+    	   <!-- HAMBURGER -->
+            <nav class="col-xs-2 col-sm-1">
+                <a class="main-header__hamburger" data-toggle="collapse" data-target="#nemu"><span class="main-header__hamburger-icon"></span></a>
+            </nav>
+    	   <!-- HAMBURGER END -->
+
+        	<!-- HEADING -->
+            <div class="col-xs-10 col-sm-11">
+                <div class="container-fluid">
+                    <div class="row row-eq-height">
+                        <div class="col-xs-12 col-sm-5">
+                            <h1 class="main-header__logo"><a href="./index.html">MOOVY</a></h1>
+                        </div>
+                        <div class="col-xs-12 col-sm-7">
+                            <span class="main-header__description">IN THEATRES NOVEMBER 10</span>
+                        </div>
                     </div>
                 </div>
             </div>
+        	<!-- HEADING END -->
+
         </div>
-    </div>
     </header>
 	<!-- HRADER END -->
 
 	<!-- MENU DROPDOWN -->	
     <div class="menu">
         <ul class="menu__items collapse" id="nemu">
-            <li class="menu__item active"><a href="#">HOME</a></li>
+            <li class="menu__item active"><a href="./index.html">HOME</a></li>
             <li class="menu__item"><a href="#">SYNOPSIS</a></li>
             <li class="menu__item"><a href="#">CAST AND CREW</a></li>
             <li class="menu__item"><a href="#">VIDEO</a></li>
@@ -52,44 +62,39 @@
         </ul>
     </div>
     <!-- MENU DROPDOWN END -->	
-	
-	
+
 	<!-- MAIN CONTENT -->
     <main class="main-content container-fluid">
         <div class="row row-eq-height">
-
             <div class="col-xs-9 col-sm-10 col-xs-offset-1 col-sm-offset-1">
+
+            	<!-- TRAILER CENTERED BUTTON -->
                 <div class="main-content__video row-eq-height">
-                    <div class="main-content__video-play ">
-                        <!-- Copy & Pasted from YouTube -->
-                        <button class="fa fa-play" data-toggle="modal" data-target="#play" data-theVideo="https://www.youtube.com/embed/Tj8d42CY6d4"></button>
+                    <div class="main-content__video-play">
+                        <button class="fa fa-play" data-toggle="modal" data-target="#play"></button>
                     </div>
                     <div class="main-content__video-text hidden-xs">
-                        <p>watch the official trailer</p>
+                        <p>watch the official trailer</p>
                     </div>
                 </div>
+            	<!-- TRAILER CENTERED BUTTON END -->
 
-            	<!-- HOME VIDEO -->
+            	<!-- HOME VIDEO MODAL -->
                 <div class="main-content__video-modal modal fade" id="play" tabindex="-1" role="dialog" aria-labelledby="play">
                     <div class="modal-box">
-                        <!--
-                        <video id="myVideo" width="320" height="176" controls>
-                            <source src="mov_bbb.mp4" type="video/mp4">
-                            <source src="mov_bbb.ogg" type="video/ogg">
-                            Your browser does not support HTML5 video.
-                        </video>
-                        -->
                         <div class="vmodal-box__video-wrapper">
-                            <iframe width="100%" src=""></iframe>
+                            <video src="http://s3.amazonaws.com/servingsites-videos/firstbaptistchurchofnorfolk/sample-welcome-video-2.mp4" controls width="240"></video>
                         </div>
                         <div class="modal-box__close">
                             <button type="button" data-dismiss="modal"></button>
                         </div>
                     </div>
                 </div>
-            	<!-- HOME VIDEO END -->
-            	
+            	<!-- HOME VIDEO MODAL END -->
+
             </div>
+            
+            <!-- SLIDER NAVIGATION -->
             <div class="main-content__slider-navigation col-xs-2 col-sm-1">
                 <a href="#" class="main-content__slider-navigation-line main-content__slider-navigation-line--active"><span>1</span></a>
                 <a href="#" class="main-content__slider-navigation-line"><span>2</span></a>
@@ -99,6 +104,8 @@
                 <a href="#" class="main-content__slider-navigation-line"><span>6</span></a>
                 <a href="#" class="main-content__slider-navigation-line"><span>7</span></a>
             </div>
+            <!-- SLIDER NAVIGATION END -->
+
         </div>
     </main>
 	<!-- MAIN CONTENT END -->
@@ -106,22 +113,32 @@
 	<!-- FOOTER -->
     <footer class="main-footer container-fluid">
         <div class="row row-eq-height">
+
+        	<!-- LEGAL -->
             <div class="main-footer__legal col-xs-9 col-sm-11">
-                <p><a href="#">LEARN MORE</a> <a href="#">TERMS AND CONDITIONS</a> <a href="#">PRIVACY POLICY</a><br>
-                COPYRIGHT 2015 MOOVY BY VBN PREMIUM THEMES.<br>
-                ALL RIGHTS RESERVED. PROPERTY OF VBN.</p>
-                <img src="./images/home/mpaa.png">
+                <a class="main-footer__legal-toggle visible-xs" data-toggle="collapse" data-target="#legal"><i class="fa fa-chevron-down"></i> LEGAL</a>
+                <div class="main-footer__legal-hidden collapse" id="legal">
+                    <p><a href="#">LEARN MORE</a> <a href="#">TERMS AND CONDITIONS</a> <a href="#">PRIVACY POLICY</a><br>
+                    COPYRIGHT 2015 MOOVY BY VBN PREMIUM THEMES.<br>
+                    ALL RIGHTS RESERVED. PROPERTY OF VBN.</p>
+                    <img src="./images/home/mpaa.png" alt="mpaa">
+                </div>
             </div>
+        	<!-- LEGAL END -->
+
+        	<!-- FOOTER ICONS -->
             <div class="main-footer__icons col-xs-3 col-sm-1">
                 <button class="fa fa-twitter" data-toggle="modal" data-target="#follow"></button>
                 <button class="fa fa-share-alt" data-toggle="modal" data-target="#share"></button>
-                <button class="fa fa-volume-up"></button>
-            </div>        
+                <button class="main-footer__icons-volume fa fa-volume-up"></button>
+            </div>
+        	<!-- FOOTER ICONS END -->
+        	
         </div>
-    </div>
-	<!-- FOOTER END  -->
+    </footer>
+	<!-- FOOTER END -->
 	
-	<!-- FOLLOW  -->
+	<!-- FOLLOW US MODAL -->
     <div class="modal fade" id="follow" tabindex="-1" role="dialog" aria-labelledby="follow">
         <div class="modal-box">
             <div class="modal-box__follow">
@@ -146,9 +163,9 @@
             </div>
         </div>
     </div>
-	<!-- FOLLOW END  -->
+	<!-- FOLLOW US MODAL END -->
 
-	<!-- SHARE  -->
+	<!-- SHARE MODAL -->
     <div class="modal fade" id="share" tabindex="-1" role="dialog" aria-labelledby="share">
         <div class="modal-box">
             <div class="modal-box__share">
@@ -173,12 +190,15 @@
             </div>
         </div>
     </div>
-	<!-- SHARE END  -->
+	<!-- SHARE MODAL END -->
+
+</div>
+<!-- HOME SLIDER CONTAINER END -->
 
 	<!-- SCRIPTS -->
-	<script src="./scripts/jquery.js" async></script>
+	<script src="./scripts/jquery.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script src="./scripts/main.js" async></script>
+	<script src="./scripts/main.js"></script>
 	<!-- SCRIPTS END -->
 
 </body>

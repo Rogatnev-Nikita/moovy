@@ -249,12 +249,12 @@ video{
 /* ------------------------------------------ */
 .main-content {
     height: 85vh;
+    padding-top: 35vh;
 }
 .main-content .row {
     display: flex;
     align-items: center;
     align-content: center;
-    height: 85vh;
 }
 .main-content__video {
     margin: 0 auto;
@@ -334,9 +334,6 @@ video{
         height: auto;
         padding-top: 40vh;
         padding-bottom: 0;
-    }
-    .main-content .row {
-        height: auto;
     }
     .main-content__video{
         width: 340px;

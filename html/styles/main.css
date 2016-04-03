@@ -248,8 +248,8 @@ video{
 /*             04 - MAIN CONTENT
 /* ------------------------------------------ */
 .main-content {
-    height: 85vh;
-    padding-top: 35vh;
+    height: 80vh;
+    padding-top: 60%;
 }
 .main-content .row {
     display: flex;

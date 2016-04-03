@@ -75,7 +75,7 @@ body{
     width: 100%;
     min-width: 380px;
     min-height: 100vh;
-    
+    background-attachment: fixed;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 audio,

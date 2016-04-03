@@ -119,7 +119,6 @@ video{
     display: block;
     width: 30px;
     height:28px;
-    margin-left: 25px;
     margin-top: 12px;
 }
 .main-header__hamburger-icon {
@@ -181,6 +180,7 @@ video{
     }
     .main-header__hamburger{
         margin-top: 2px;
+        margin-left: 25px;
     }
 }
 
@@ -346,7 +346,7 @@ video{
 /* ------------------------------------------ */
 .main-footer {
     width: 100%;
-    padding: 40px;
+    padding: 40px 15px;
     position: relative;
 }
 .main-footer .row-eq-height{
@@ -367,8 +367,7 @@ video{
     color: rgba(255, 255, 255, 1);
 }
 .main-footer__legal p{
-    margin-top: 25px;
-    
+    margin-top: 25px;   
 }
 .main-footer__legal img {
     margin-top: 20px;
@@ -379,10 +378,6 @@ video{
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content:space-between;
-    position: absolute;
-    min-width: 150px;
-    right: 40px;
-    bottom: 40px;
 }
 .main-footer__icons button{
     padding: 0;
@@ -416,10 +411,17 @@ video{
     #legal.main-footer__legal-hidden{
         display: block;
     }
+    .main-footer__icons {
+        position: absolute;
+        min-width: 150px;
+        right: 40px;
+        bottom: 40px;
+    }
 }
 @media only screen and (min-width : 768px) and (min-height : 590px) {
     .main-footer {
         position: absolute;
+        padding: 40px;
         bottom: 0;
         min-width: auto;
     }

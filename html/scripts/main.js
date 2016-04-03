@@ -1,8 +1,8 @@
 /*
-Template Name: 
+Template Name:
 Author: Rogatnev Nikita
 Version: 1.0.0
-Tags: 
+Tags:
 */
 
 $(document).ready(function() {
@@ -17,8 +17,7 @@ $(document).ready(function() {
             });
             $("body").removeClass('modal-open');
             $(".main-header__hamburger").removeClass('main-header__hamburger--active');
-        }
-        else {
+        } else {
             $('<div class="modal-backdrop"></div>').fadeIn().appendTo(document.body);
             $("body").addClass('modal-open');
             $(".main-header__hamburger").addClass('main-header__hamburger--active');
@@ -33,8 +32,7 @@ $(document).ready(function() {
         if ($(this).html() == '<i class="fa fa-chevron-up"></i> HIDE LEGAL') {
             $(this).html('<i class="fa fa-chevron-down"></i> LEGAL');
             $(".main-footer").css("background", "rgba(0, 0, 0, 0)");
-        }
-        else {
+        } else {
             $(this).html('<i class="fa fa-chevron-up"></i> HIDE LEGAL');
             $(".main-footer").css("background", "rgba(0, 0, 0, 1)");
         }
@@ -45,13 +43,12 @@ $(document).ready(function() {
     /*  MUTE BUTTON
     /* ------------------------------------------ */
     $("video, iframe").prop('muted', false);
-    $(".main-footer__icons-volume").click( function (){
-        if( $("video").prop('muted') ) {
+    $(".main-footer__icons-volume").click(function() {
+        if ($("video").prop('muted')) {
             $("video").prop('muted', false);
             $(".main-footer__icons-volume").removeClass('fa-volume-off');
             $(".main-footer__icons-volume").addClass('fa-volume-up');
-        }
-        else {
+        } else {
             $("video").prop('muted', true);
             $(".main-footer__icons-volume").removeClass('fa-volume-up');
             $(".main-footer__icons-volume").addClass('fa-volume-off');
@@ -69,42 +66,42 @@ $(document).ready(function() {
         'url(./images/home/home__bg_4.jpg)',
         'url(./images/home/home__bg_5.jpg)',
         'url(./images/home/home__bg_6.jpg)',
-        'url(./images/home/home__bg_7.jpg)'    
+        'url(./images/home/home__bg_7.jpg)'
     ];
 
     $('body').css('background-image', backgrounds[0]);
 
-    $(".main-content__slider-navigation-line:nth-child(1)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(1)").click(function() {
         $('body').css('background-image', backgrounds[0]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(1)").addClass('main-content__slider-navigation-line--active');
     });
-    $(".main-content__slider-navigation-line:nth-child(2)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(2)").click(function() {
         $('body').css('background-image', backgrounds[1]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(2)").addClass('main-content__slider-navigation-line--active');
     });
-    $(".main-content__slider-navigation-line:nth-child(3)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(3)").click(function() {
         $('body').css('background-image', backgrounds[2]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(3)").addClass('main-content__slider-navigation-line--active');
     });
-    $(".main-content__slider-navigation-line:nth-child(4)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(4)").click(function() {
         $('body').css('background-image', backgrounds[3]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(4)").addClass('main-content__slider-navigation-line--active');
     });
-    $(".main-content__slider-navigation-line:nth-child(5)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(5)").click(function() {
         $('body').css('background-image', backgrounds[4]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(5)").addClass('main-content__slider-navigation-line--active');
     });
-    $(".main-content__slider-navigation-line:nth-child(6)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(6)").click(function() {
         $('body').css('background-image', backgrounds[5]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(6)").addClass('main-content__slider-navigation-line--active');
     });
-    $(".main-content__slider-navigation-line:nth-child(7)").click( function (){
+    $(".main-content__slider-navigation-line:nth-child(7)").click(function() {
         $('body').css('background-image', backgrounds[6]);
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(7)").addClass('main-content__slider-navigation-line--active');

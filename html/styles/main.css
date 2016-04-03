@@ -249,7 +249,8 @@ video{
 /* ------------------------------------------ */
 .main-content {
     padding-top: 35vh;
-    padding-bottom: 140px;
+    padding-bottom: 15vh;
+    max-height:100vh;
 }
 .main-content .row {
     display: flex;
@@ -257,7 +258,6 @@ video{
     align-content: center;
 }
 .main-content__video {
-    width: 340px;
     margin: 0 auto;
 }
 .main-content__video-play{
@@ -334,6 +334,9 @@ video{
     .main-content {
         padding-top: 45vh;
         padding-bottom: 0;
+    }
+    .main-content__video{
+        width: 340px;
     }
 }
 

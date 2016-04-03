@@ -350,7 +350,7 @@ video{
 .main-footer {
     width: 100%;
     padding: 40px 15px;
-    position: relative;
+    position: absolute;
 }
 .main-footer .row-eq-height{
     align-items: flex-end;
@@ -423,7 +423,6 @@ video{
 }
 @media only screen and (min-width : 768px) and (min-height : 590px) {
     .main-footer {
-        position: absolute;
         padding: 40px;
         bottom: 0;
         min-width: auto;

@@ -537,7 +537,8 @@ video {
 	margin: 0;
 	padding: 20px 0 60px;
 
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 }
 .modal-backdrop {
 	background-color: rgba(0, 0, 0, 0.75);
@@ -561,7 +562,8 @@ video {
 	height: 32px;
 	margin-top: 20px;
 
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 }
 .modal-box__close button {
 	width: 32px;

@@ -54,8 +54,7 @@ body {
 
 	width: 100%;
 	min-width: 380px;
-	height: 100vh;
-	min-height: 100vh;
+	height: 100%;
 
 	color: rgba(255, 255, 255, 1);
 	background-color: rgba(0, 0, 0, 1);
@@ -263,8 +262,9 @@ video {
 	padding-top: 40vh;*/
 
 	width: 100%;
-	height: 80vh;
-	margin-top: 120px;
+	margin-top: 111px;
+	padding-top: 100px;
+	padding-bottom: 100px;
 
 	-webkit-box-align: center;
 	-webkit-align-items: center;
@@ -381,6 +381,7 @@ video {
 @media only screen and (min-width: 768px) {
 	.main-content {
 		height: auto;
+		margin-top: 0;
 		padding-top: 40vh;
 		padding-bottom: 0;
 	}
@@ -529,6 +530,9 @@ video {
 /* ------------------------------------------ */
 /*             06 - MODALS
 /* ------------------------------------------ */
+.modal {
+	min-height: 550px;
+}
 .modal-box {
 	position: absolute;
 	top: 50%;

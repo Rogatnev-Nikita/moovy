@@ -377,7 +377,7 @@ video{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 .main-footer__icons button{
     padding: 0;

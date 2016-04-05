@@ -59,6 +59,7 @@ $(document).ready(function() {
     /* ------------------------------------------ */
     /*  HOME SLIDER
     /* ------------------------------------------ */
+    if ($('body').hasClass('home-page')) {
     var backgrounds = [
         'url(./images/home/home__bg_1.jpg)',
         'url(./images/home/home__bg_2.jpg)',
@@ -106,7 +107,7 @@ $(document).ready(function() {
         $(".main-content__slider-navigation-line").removeClass('main-content__slider-navigation-line--active');
         $(".main-content__slider-navigation-line:nth-child(7)").addClass('main-content__slider-navigation-line--active');
     });
-
+}
 
 
 

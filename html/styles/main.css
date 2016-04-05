@@ -53,6 +53,8 @@ Tags:
 body {
 	z-index: 1;
 
+	overflow-x: hidden;
+
 	width: 100%;
 	min-width: 380px;
 	height: 100%;
@@ -89,12 +91,22 @@ body:after {
 	background-image: url(../images/404/404__bg.jpg);
 }
 
-
 audio,
 video {
 	width: 100%;
 }
 
+@media only screen and (min-width: 768px) {
+	body {
+		display: flex;
+
+		height: 100vh;
+
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+}
 /* ------------------------------------------ */
 /*             02 - HEADER
 /* ------------------------------------------ */
@@ -435,7 +447,7 @@ video {
 	.main-content {
 		height: auto;
 		margin-top: 0;
-		padding-top: 40vh;
+		padding-top: 0;
 	}
 	.main-content__video {
 		width: 340px;
@@ -452,11 +464,12 @@ video {
 /*             05 - FOOTER
 /* ------------------------------------------ */
 .main-footer {
-	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
 
 	width: 100%;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 40px;
 }
 .main-footer .row-eq-height {
 	display: -webkit-box;
@@ -546,6 +559,9 @@ video {
 	font-size: 12px;
 }
 @media only screen and (min-width: 768px) {
+	.main-footer {
+		position: fixed;
+	}
 	.main-footer__icons {
 		position: initial;
 
@@ -568,18 +584,14 @@ video {
 	#legal.main-footer__legal-hidden {
 		display: block;
 	}
-	.main-footer__icons {
-		position: absolute;
-		right: 40px;
-		bottom: 40px;
-	}
 }
-@media only screen and (min-width: 768px) and (min-height: 680px) {
+@media only screen and (min-width: 768px) and (max-height: 680px) {
+	.main-content {
+		margin-top: 91px;
+		padding-top: 20px;
+	}
 	.main-footer {
-		bottom: 0;
-
-		min-width: auto;
-		padding: 40px;
+		position: relative;
 	}
 }
 /* ------------------------------------------ */

@@ -98,13 +98,24 @@ video {
 
 @media only screen and (min-width: 768px) {
 	body {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 
 		height: 100vh;
 
-		align-items: center;
-		justify-content: center;
-		flex-wrap: wrap;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-flex-wrap: wrap;
+		    -ms-flex-wrap: wrap;
+		        flex-wrap: wrap;
 	}
 }
 /* ------------------------------------------ */
@@ -130,7 +141,7 @@ video {
 	display: block;
 
 	width: 20px;
-	height: 16px;
+	height: 17px;
 	margin-top: 18px;
 }
 .main-header__hamburger-icon {
@@ -402,11 +413,23 @@ video {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display:         flex;
-	flex-direction: column;
+	        flex-direction: column;
 
-	align-items: center;
-	align-content: center;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 
 .main-content__line {

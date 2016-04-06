@@ -88,10 +88,22 @@ body:after {
 	background-attachment: fixed;
 }
 .error-page {
-	background-image: url(../images/404/404__bg.jpg);
+	background-image: url(../images/error/error__bg.jpg);
+}
+.crew-page {
+	background-image: url(../images/crew/crew__bg.jpg);
+}
+.gallery-page {
+	background-image: url(../images/gallery/news__bg.jpg);
+}
+.news-page {
+	background-image: url(../images/news/news__bg.jpg);
 }
 .synopsis-page {
 	background-image: url(../images/synopsis/synopsis__bg.jpg);
+}
+.video-page {
+	background-image: url(../images/video/video__bg.jpg);
 }
 
 audio,

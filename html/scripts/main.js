@@ -29,11 +29,11 @@ $(document).ready(function() {
     /*  LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON
     /* ------------------------------------------ */
     $(".main-footer__legal-toggle[data-toggle='collapse']").click(function() {
-        if ($(this).html() == '<i class="fa fa-chevron-up"></i> HIDE LEGAL') {
-            $(this).html('<i class="fa fa-chevron-down"></i> LEGAL');
+        if ($(this).html() == '<i class="fa fa-chevron-down"></i> HIDE LEGAL') {
+            $(this).html('<i class="fa fa-chevron-up"></i> LEGAL');
             $(".main-footer").css("background", "rgba(0, 0, 0, 0)");
         } else {
-            $(this).html('<i class="fa fa-chevron-up"></i> HIDE LEGAL');
+            $(this).html('<i class="fa fa-chevron-down"></i> HIDE LEGAL');
             $(".main-footer").css("background", "rgba(0, 0, 0, 1)");
         }
     });

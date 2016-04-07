@@ -3,7 +3,6 @@ html {
 	overflow: hidden;
 
 	-webkit-transition: opacity 400ms;
-	   -moz-transition: opacity 400ms;
 	        transition: opacity 400ms;
 }
 .onepage-wrapper {

@@ -94,9 +94,6 @@ body:after {
 .crew-page {
 	background-image: url(../images/crew/crew__bg.jpg);
 }
-.gallery-page {
-	background-image: url(../images/gallery/news__bg.jpg);
-}
 .news-page {
 	background-image: url(../images/news/news__bg.jpg);
 }
@@ -257,6 +254,7 @@ button:visited {
 	margin-top: 35px;
 
 	letter-spacing: 0.3em;
+	text-transform: uppercase;
 
 	font-size: 12px;
 	font-weight: bold;
@@ -471,13 +469,6 @@ button:visited {
 	background: rgba(255, 255, 255, 0.22);
 }
 
-
-
-
-
-
-
-
 .main-content__slider-navigation-number {
 	display: block;
 
@@ -630,6 +621,65 @@ button:visited {
 
 
 /* ------------------------------------------ */
+/*             0x - GALLERY PAGE
+/* ------------------------------------------ */
+
+
+.gallery-mini-pages section {
+	overflow: hidden;
+
+	min-width: 380px;
+	height: 100%;
+	min-height: 100vh;
+	max-height: 100vh;
+
+	background-color: rgba(0, 0, 0, 1);
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-position: center center;
+	background-size: cover;
+}
+.gallery-mini-pages .gallery-1 {
+	background-image: url(../images/gallery/gallery__bg_1.jpg);
+}
+.gallery-mini-pages .gallery-2 {
+	background-image: url(../images/gallery/gallery__bg_1.jpg);
+}
+.gallery-mini-pages .gallery-3 {
+	background-image: url(../images/gallery/gallery__bg_1.jpg);
+}
+.gallery-page .main-content {
+	margin-top: 0;
+}
+.gallery-mini-pages .gallery-1:after,
+.gallery-mini-pages .gallery-2:after,
+.gallery-mini-pages .gallery-3:after {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+
+	display: block;
+
+	width: 100%;
+	min-width: 380px;
+	height: 100%;
+	min-height: 100vh;
+
+	content: "";
+
+	background: rgba(0, 0, 0, 0.7);
+	background-attachment: fixed;
+}
+
+
+
+
+
+
+
+
+/* ------------------------------------------ */
 /*             0x - VIDEO PAGE
 /* ------------------------------------------ */
 
@@ -680,9 +730,6 @@ button:visited {
 	background: rgba(0, 0, 0, 0.7);
 	background-attachment: fixed;
 }
-
-
-
 
 .main-content__video-btn {
 	z-index: 1;

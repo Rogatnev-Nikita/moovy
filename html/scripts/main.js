@@ -111,9 +111,9 @@ $(document).ready(function() {
 
 
     /* ------------------------------------------ */
-    /*  VIDEO ONEPAGE SCROLL
+    /*   ONEPAGE SCROLL
     /* ------------------------------------------ */
-    if ($('body').hasClass('video-page')) {
+    if ($('body').hasClass('video-page') || $('body').hasClass('gallery-page')) {
         $(".main").onepage_scroll({
             sectionContainer: "section",
             easing: "ease",

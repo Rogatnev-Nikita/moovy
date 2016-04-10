@@ -815,31 +815,39 @@ button:visited {
 	-ms-grid-row-align: flex-start;
 	        align-items: flex-start;
 }
-.crew__members .row {
-	min-width: 100%;
-	max-width: none;
+.crew__members.row {
+	overflow-x: scroll;
 
-	flex-wrap: wrap;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 }
 .crew__heading {
 	display: block;
 
 	width: 100%;
-	min-width: 100%;
+	margin-bottom: 30px;
 
-	flex-grow: 2;
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+
+	color: rgba(255, 255, 255, 1);
+
+	font-size: 15px;
 }
 
-.crew__member {
-	min-width: 200px;
-
-	outline: 1px solid red;
-}
 .crew__image {
 	width: 100%;
 	max-width: 100%;
 	height: auto;
 	margin-bottom: 5px;
+}
+.crew__member {
+	min-width: 220px;
+	padding: 10px 15px;
+}
+.crew__member:first-child {
+	padding-left: 0;
 }
 .crew__member h1 {
 	text-transform: uppercase;
@@ -922,7 +930,9 @@ button:visited {
 	.crew__member {
 		overflow-y: scroll;
 
-		max-height: 455px;
+		max-height: 465px;
+		padding-top: 0;
+		padding-bottom: 0;
 	}
 }
 

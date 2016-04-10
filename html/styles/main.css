@@ -623,8 +623,6 @@ button:visited {
 /* ------------------------------------------ */
 /*             0x - GALLERY PAGE
 /* ------------------------------------------ */
-
-
 .gallery-mini-pages section {
 	overflow: hidden;
 
@@ -671,7 +669,11 @@ button:visited {
 	background: rgba(0, 0, 0, 0.7);
 	background-attachment: fixed;
 }
-
+@media only screen and (min-width: 768px) {
+	.gallery-page .main-footer__legal {
+		display: none;
+	}
+}
 
 
 

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/onepage-scroll.css" />
 </head>
 
 <body class="crew-page">
@@ -66,10 +67,10 @@
             <div class="main-content-wrapper col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
 
                 <!-- CREW PAGE -->
-                <section class="crew">
+                <div class="main crew">
                     <h1 class="crew__heading">CAST AND CREW</h1>
-                    <div class="crew__members row">
 
+                    <section class="crew__members row">
                         <article class="crew__member col-xs-4">
                             <img src="./images/crew/crew__member_1.jpg" class="crew__image" alt="crew__member">
                             <h1>John Doe</h1>
@@ -91,8 +92,43 @@
                             <p>Vivamus pharetra pharetra nisl, vel molestie urna fermentum ciel rutrum sollicitudin.</p>
                             <a href="#" class="crew__read-more"><span></span>read more</a>
                         </article>
-                    </div>
-                </section>
+
+                        <!-- ONEPAGE NAVIGATION -->
+                        <div class="main-content__slider-navigation col-xs-2 col-sm-1">
+                            <a onclick="$('.main').moveUp();" class="main-content__slider-navigation-number main-content__slider-navigation-number--arrow"><i class="fa fa-chevron-up"></i></a>
+                            <span class="main-content__slider-navigation-number">2</span>
+                            <span class="main-content__slider-navigation-number main-content__slider-navigation-number--separator">&#x2015;</span>
+                            <span class="main-content__slider-navigation-number">3</span>
+                            <a onclick="$('.main').moveDown();" class="main-content__slider-navigation-number main-content__slider-navigation-number--arrow"><i class="fa fa-chevron-down"></i></a>
+                        </div>
+                        <!-- ONEPAGE NAVIGATION -->
+
+                    </section>
+
+                    <section class="crew__members row">
+                        <article class="crew__member col-xs-4">
+                            <img src="./images/crew/crew__member_1.jpg" class="crew__image" alt="crew__member">
+                            <h1>John Doe</h1>
+                            <span>director</span>
+                            <p>Phasellus vitae aliquet ex. Vivamus non diam ornare, feugiat ligula at, dignissim ante.</p>
+                            <a href="#" class="crew__read-more"><span></span>read more</a>
+                        </article>
+                        <article class="crew__member col-xs-4">
+                            <img src="./images/crew/crew__member_2.jpg" class="crew__image" alt="crew__member">
+                            <h1>Amie Smith</h1>
+                            <span>screenwriter</span>
+                            <p>Donec ultrices porta purus, sed pulvinar nunc auctor fringilla consectetur sapien.</p>
+                            <a href="#" class="crew__read-more"><span></span>read more</a>
+                        </article>
+                        <article class="crew__member col-xs-4">
+                            <img src="./images/crew/crew__member_3.jpg" class="crew__image" alt="crew__member">
+                            <h1>Ellie Nixon</h1>
+                            <span>Actor/Emma</span>
+                            <p>Vivamus pharetra pharetra nisl, vel molestie urna fermentum ciel rutrum sollicitudin.</p>
+                            <a href="#" class="crew__read-more"><span></span>read more</a>
+                        </article>
+                    </section>
+                </div>
                 <!-- CREW PAGE END -->
 
             </div>
@@ -186,6 +222,7 @@
     <script src="./scripts/jquery.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/onepage-scroll.min.js"></script>
     <!-- SCRIPTS END -->
 
 </body>

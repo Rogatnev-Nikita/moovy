@@ -113,7 +113,7 @@ $(document).ready(function() {
     /* ------------------------------------------ */
     /*   ONEPAGE SCROLL
     /* ------------------------------------------ */
-    if ($('body').hasClass('video-page') || $('body').hasClass('gallery-page')) {
+    if ($('body').hasClass('video-page') || $('body').hasClass('gallery-page') || $('body').hasClass('crew-page')) {
         $(".main").onepage_scroll({
             sectionContainer: "section",
             easing: "ease",

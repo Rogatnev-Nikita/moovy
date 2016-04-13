@@ -464,7 +464,13 @@ button:visited {
 }
 
 .main-content__slider-navigation-number {
-	display: block;
+	position: fixed;
+	top: 50vh;
+	right: 40px;
+
+	display: flex;
+
+	height: auto;
 
 	text-align: right;
 
@@ -603,9 +609,9 @@ button:visited {
 		background: transparent;
 	}
 	.main-content__synopsis-description {
-		overflow-y: scroll;
+		overflow: visible;
 
-		height: 320px;
+		height: auto;
 		margin-top: 40px;
 		padding: 0 20px;
 
@@ -803,20 +809,18 @@ button:visited {
 .crew-page {
 	background-image: url(../images/crew/crew__bg.jpg);
 }
-.crew-page .crew__members {
-	-webkit-box-align: start;
-	-webkit-align-items: flex-start;
-	-ms-flex-align: start;
-	-ms-grid-row-align: flex-start;
-	        align-items: flex-start;
-}
-.crew__members.row {
-	overflow-x: scroll;
 
-	width: 100%;
-	min-width: 100%;
-	max-width: 100%;
+.crew-mini-pages section {
+	min-height: 100vh;
+
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	background-position: center center;
+	background-size: cover;
 }
+
+
+
 .crew__heading {
 	display: block;
 
@@ -838,7 +842,6 @@ button:visited {
 	margin-bottom: 5px;
 }
 .crew__member {
-	min-width: 220px;
 	padding: 10px 15px;
 }
 .crew__member:first-child {

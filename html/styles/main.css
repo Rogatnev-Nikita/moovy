@@ -468,7 +468,10 @@ button:visited {
 	top: 50vh;
 	right: 40px;
 
-	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
 
 	height: auto;
 

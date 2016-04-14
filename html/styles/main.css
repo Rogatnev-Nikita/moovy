@@ -485,10 +485,16 @@ button:visited {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display:         flex;
-	flex-direction: column;
+	        flex-direction: column;
 
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	text-align: center;
+
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
 }
 
 
@@ -864,16 +870,26 @@ button:visited {
 }
 
 .crew__members {
-	display: flex;
-	flex-direction: row;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
+	        flex-direction: row;
 
 	padding: 0;
 
-	flex-wrap: nowrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	    -ms-flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	    -ms-flex-wrap: nowrap;
+	        flex-wrap: nowrap;
 }
 
 .crew__members--after-heading {
-	transform: translateY(40px);
+	-webkit-transform: translateY(40px);
+	        transform: translateY(40px);
 }
 .crew__member {
 	min-width: 300px;
@@ -981,11 +997,15 @@ button:visited {
 }
 @media only screen and (min-width: 768px) {
 	.crew-page .slider-navigation {
-		display: flex;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display:         flex;
 	}
 
 	.crew__members {
-		transform: translate(0);
+		-webkit-transform: translate(0);
+		        transform: translate(0);
 	}
 	.crew__member {
 		overflow: scroll;
@@ -1169,9 +1189,14 @@ button:visited {
 }
 @media only screen and (max-height:650px) {
 	body {
-		flex-direction: column;
+		        flex-direction: column;
 
 		height: auto;
+
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
 	}
 	.main-content {
 		min-height: auto;
@@ -1187,7 +1212,12 @@ button:visited {
 }
 @media only screen and (max-height: 560px) {
 	.main-footer__icons {
-		flex-direction: row;
+		        flex-direction: row;
+
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
 	}
 }
 

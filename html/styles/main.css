@@ -516,6 +516,7 @@ button:visited {
 }
 
 .slider-navigation-line:hover,
+.slider-navigation-number:hover,
 .slider-navigation-line:active {
 	text-decoration: none;
 
@@ -864,12 +865,30 @@ button:visited {
 	padding: 0;
 }
 
+.crew-page .main-content__rotate {
+	position: absolute;
+
+	transform: translate(-70%, 80px);
+}
+.crew-page .main-content__line {
+	height: 100px;
+	margin-top: 100px;
+}
+.crew-page .main-content__rotate h1 {
+	width: 300px;
+	height: auto;
+	margin: 30px 0;
+
+	line-height: 1;
+}
 
 .crew-page .slider-navigation {
 	display: none;
 }
 
 .crew__members {
+	position: relative;
+
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;

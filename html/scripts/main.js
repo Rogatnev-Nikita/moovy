@@ -60,10 +60,10 @@ $(document).ready(function() {
     /*  READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON
     /* ------------------------------------------ */
     $(".crew__read-more[data-toggle='collapse']").click(function() {
-        if ($(this).html() == 'HIDE LEGAL') {
-            $(this).html('READ MORE');
+        if ($(this).html() == '<span></span>roll up') {
+            $(this).html('<span></span>read more');
         } else {
-            $(this).html('<i class="fa fa-chevron-down"></i> HIDE LEGAL');
+            $(this).html('<span></span>roll up');
         }
     });
 
@@ -159,18 +159,8 @@ $(document).ready(function() {
            loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
            keyboard: true,                  // You can activate the keyboard controls
            responsiveFallback: true,        // You can fallback to normal page scroll by defining the width of the browser
-   });
-
-
-
-
-
-
-};
-
-
-
-
+       });
+   };
 
 
 

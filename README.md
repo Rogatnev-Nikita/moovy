@@ -6,7 +6,7 @@ http://rogatnev-nikita.github.io/moovy/html/
 <ul>
   <li>High Resolution: Yes</li>
   <li>Compatible Browsers: IE10, Firefox, Safari, Opera, Chrome, Edge</li>
-  <li>Files Included: HTML Files, CSS Files, JS Files, PHP Files, Images</li>
+  <li>Files Included: HTML Files, CSS Files, JS Files, PHP Files</li>
   <li>Columns: 12</li>
   <li>Documentation: Well Documented</li>
   <li>Layout: Responsive</li>

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/onepage-scroll.css" />
 </head>
 
 <body class="news-page">
@@ -61,20 +62,132 @@
     <!-- MENU DROPDOWN END -->
 
     <!-- MAIN CONTENT -->
-    <main class="main-content container-fluid">
+    <main class="news-mini-pages main-content container-fluid main">
+        <h1 class="news__heading visible-xs">NEWS</h1>
+
         <section class="row row-eq-height">
-            <div class="main-content-wrapper col-xs-12">
+            <div class="main-content-wrapper col-xs-12 col-sm-11 col-lg-12">
 
                 <!-- NEWS PAGE -->
-                <div class="main-content__news">
-
+                <div class="news__items col-xs-12 col-lg-6 col-lg-offset-3">
+                    <div class="main-content__rotate hidden-xs hidden-sm hidden-md">
+                        <h1>NEWS</h1>
+                        <div class="main-content__line"></div>
+                    </div>
+                    <article class="news__item col-xs-8 col-sm-4">
+                        <div class="news__image-withbutton">
+                            <img src="./images/news/news__item_1.jpg" class="news__image" alt="news__item">
+                            <button class="main-content__play-rounded" data-toggle="modal" data-target="#play-1">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
+                        <span>7 september 2015</span>
+                        <h1>the official trailer</h1>
+                        <p>Phasellus vitae aliquet ex. Vivamus non diam ornare, feugiat ligula at, dignissim ante.</p>
+                        <p class="collapse" id="news__item-1">Pn dictum gravida velit a congue. Maecenas et magna et diam consequat malesuada. Sed eu suscipit ipsum. Nulla facilisi. Aenean ornare arcu quis efficitur congue. Etiam ex ante, malesuada id ? Morbi id nibh ac magna dictum luctus.
+                            Sed quis risus pharetra, rutrum eros eu, eleife. cursus et, fermentum sed enim.</p>
+                        <a class="news__read-more" data-toggle="collapse" data-target="#news__item-1"><span></span>read more</a>
+                    </article>
+                    <article class="news__item col-xs-8 col-sm-4">
+                        <img src="./images/news/news__item_2.jpg" class="news__image" alt="news__item">
+                        <span>20 August 2015</span>
+                        <h1>final scenes footage</h1>
+                        <p>Donec ultrices porta purus, sed pulvinar nunc auctor fringilla consectetur sapien.</p>
+                        <p class="collapse" id="news__item-2">Pn dictum gravida velit a congue. Maecenas et magna et diam consequat malesuada. Sed eu suscipit ipsum. Nulla facilisi. Aenean ornare arcu quis efficitur congue. Etiam ex ante, malesuada id ? Morbi id nibh ac magna dictum luctus.
+                            Sed quis risus pharetra, rutrum eros eu, eleife. cursus et, fermentum sed enim.</p>
+                        <a class="news__read-more" data-toggle="collapse" data-target="#news__item-2"><span></span>read more</a>
+                    </article>
+                    <article class="news__item col-xs-8 col-sm-4">
+                        <img src="./images/news/news__item_3.jpg" class="news__image" alt="news__item">
+                        <span>18 July 2015</span>
+                        <h1>The Final Phase</h1>
+                        <p>Vivamus pharetra pharetra nisl, vel molestie urna fermentum ciel rutrum sollicitudin.</p>
+                        <p class="collapse" id="news__item-3">Pn dictum gravida velit a congue. Maecenas et magna et diam consequat malesuada. Sed eu suscipit ipsum. Nulla facilisi. Aenean ornare arcu quis efficitur congue. Etiam ex ante, malesuada id ? Morbi id nibh ac magna dictum luctus.
+                            Sed quis risus pharetra, rutrum eros eu, eleife. cursus et, fermentum sed enim.</p>
+                        <a class="news__read-more" data-toggle="collapse" data-target="#news__item-3"><span></span>read more</a>
+                    </article>
                 </div>
                 <!-- NEWS PAGE END -->
 
+                <!-- NEWS PAGE MOBILE NAVIGATION -->
+                <a onclick="$('.main').moveDown();" class="news__mobile-next visible-xs"><i class="fa fa-chevron-down" id="prew"></i></a>
+                <!-- NEWS PAGE MOBILE NAVIGATION END -->
+
             </div>
         </section>
+
+        <section class="row row-eq-height">
+            <div class="main-content-wrapper col-xs-12 col-sm-11 col-lg-12">
+
+                <!-- NEWS PAGE -->
+                <div class="news__items col-xs-12 col-lg-6 col-lg-offset-3">
+                    <article class="news__item col-xs-8 col-sm-4">
+                        <div class="news__image-withbutton">
+                            <img src="./images/news/news__item_1.jpg" class="news__image" alt="news__item">
+                            <button class="main-content__play-rounded" data-toggle="modal" data-target="#play-1">
+                                <i class="fa fa-play"></i>
+                            </button>
+                        </div>
+                        <span>7 september 2015</span>
+                        <h1>the official trailer</h1>
+                        <p>Phasellus vitae aliquet ex. Vivamus non diam ornare, feugiat ligula at, dignissim ante.</p>
+                        <p class="collapse" id="news__item-4">Pn dictum gravida velit a congue. Maecenas et magna et diam consequat malesuada. Sed eu suscipit ipsum. Nulla facilisi. Aenean ornare arcu quis efficitur congue. Etiam ex ante, malesuada id ? Morbi id nibh ac magna dictum luctus.
+                            Sed quis risus pharetra, rutrum eros eu, eleife. cursus et, fermentum sed enim.</p>
+                        <a class="news__read-more" data-toggle="collapse" data-target="#news__item-4"><span></span>read more</a>
+                    </article>
+                    <article class="news__item col-xs-8 col-sm-4">
+                        <img src="./images/news/news__item_2.jpg" class="news__image" alt="news__item">
+                        <span>20 August 2015</span>
+                        <h1>final scenes footage</h1>
+                        <p>Donec ultrices porta purus, sed pulvinar nunc auctor fringilla consectetur sapien.</p>
+                        <p class="collapse" id="news__item-5">Pn dictum gravida velit a congue. Maecenas et magna et diam consequat malesuada. Sed eu suscipit ipsum. Nulla facilisi. Aenean ornare arcu quis efficitur congue. Etiam ex ante, malesuada id ? Morbi id nibh ac magna dictum luctus.
+                            Sed quis risus pharetra, rutrum eros eu, eleife. cursus et, fermentum sed enim.</p>
+                        <a class="news__read-more" data-toggle="collapse" data-target="#news__item-5"><span></span>read more</a>
+                    </article>
+                    <article class="news__item col-xs-8 col-sm-4">
+                        <img src="./images/news/news__item_3.jpg" class="news__image" alt="news__item">
+                        <span>18 July 2015</span>
+                        <h1>The Final Phase</h1>
+                        <p>Vivamus pharetra pharetra nisl, vel molestie urna fermentum ciel rutrum sollicitudin.</p>
+                        <p class="collapse" id="news__item-6">Pn dictum gravida velit a congue. Maecenas et magna et diam consequat malesuada. Sed eu suscipit ipsum. Nulla facilisi. Aenean ornare arcu quis efficitur congue. Etiam ex ante, malesuada id ? Morbi id nibh ac magna dictum luctus.
+                            Sed quis risus pharetra, rutrum eros eu, eleife. cursus et, fermentum sed enim.</p>
+                        <a class="news__read-more" data-toggle="collapse" data-target="#news__item-6"><span></span>read more</a>
+                    </article>
+                </div>
+                <!-- NEWS PAGE END -->
+
+                <!-- NEWS PAGE MOBILE NAVIGATION -->
+                <a onclick="$('.main').moveUp();" class="news__mobile-prew visible-xs"><i class="fa fa-chevron-up"></i></a>
+                <!-- NEWS PAGE MOBILE NAVIGATION END -->
+
+            </div>
+        </section>
+
     </main>
     <!-- MAIN CONTENT END -->
+
+    <!-- ONEPAGE NAVIGATION -->
+    <div class="slider-navigation">
+        <a onclick="$('.main').moveUp();" class="slider-navigation-number slider-navigation-number--arrow slider-navigation-number--disabled" id="prev"><i class="fa fa-chevron-up"></i></a>
+        <span class="slider-navigation-number">1</span>
+        <span class="slider-navigation-number slider-navigation-number--separator">&#x2015;</span>
+        <span class="slider-navigation-number">2</span>
+        <a onclick="$('.main').moveDown();" class="slider-navigation-number slider-navigation-number--arrow"><i class="fa fa-chevron-down"></i></a>
+    </div>
+    <!-- ONEPAGE NAVIGATION -->
+
+    <!-- VIDEO MODALS -->
+    <div class="main-content__video-modal modal fade" id="play-1" tabindex="-1" role="dialog" aria-labelledby="play-1">
+        <div class="modal-box">
+            <div class="modal-box__video-wrapper">
+                <video src="http://s3.amazonaws.com/servingsites-videos/firstbaptistchurchofnorfolk/sample-welcome-video-2.mp4" controls width="240"></video>
+            </div>
+            <div class="modal-box__close">
+                <button type="button" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+    <!-- VIDEO MODALS END -->
 
     <!-- FOOTER -->
     <footer class="main-footer container-fluid">
@@ -162,6 +275,7 @@
     <script src="./scripts/jquery.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./scripts/main.js"></script>
+    <script src="./scripts/onepage-scroll.min.js"></script>
     <!-- SCRIPTS END -->
 
 </body>

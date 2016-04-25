@@ -1,5 +1,5 @@
 /*
-Template Name:
+Template Name: MOOVY
 Author: Rogatnev Nikita
 Version: 1.0.0
 Tags:
@@ -128,12 +128,13 @@ pre{
 .aside > ul li a.active {
     color: #fff;
 }
-.eyes {
-    margin-top: 40px;
+.logo {
+    margin: 70px 0 50px;
 }
-.eyes,
-.eyes canvas {
-    max-width: 100%;
+.logo img{
+    display: block;
+
+    margin: 0 auto;
 }
 
 /* ------------------------------------------ */

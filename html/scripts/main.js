@@ -1,14 +1,25 @@
 /*
-Template Name:
+Template Name: MOOVY
 Author: Rogatnev Nikita
 Version: 1.0.0
 Tags:
 */
 
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+/*  01 - MENU OVERLAY & HAMBURGER ICON ACTIVE  */
+/*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+/*  03 - MUTE BUTTON  */
+/*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+/*  05 - HOME SLIDER  */
+/*  06 - ONEPAGE SCROLL  */
+
+
 $(document).ready(function() {
 
     /* ------------------------------------------ */
-    /*  MENU OVERLAY & HAMBURGER ICON ACTIVE
+    /*  01 - MENU OVERLAY & HAMBURGER ICON ACTIVE
     /* ------------------------------------------ */
     $(".main-header__hamburger").click(function() {
         if ($("body").hasClass("modal-open")) {
@@ -26,7 +37,7 @@ $(document).ready(function() {
 
 
     /* ------------------------------------------ */
-    /*  LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON
+    /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON
     /* ------------------------------------------ */
     $(".main-footer__legal-toggle[data-toggle='collapse']").click(function() {
         if ($(this).html() == '<i class="fa fa-chevron-down"></i> HIDE LEGAL') {
@@ -40,7 +51,7 @@ $(document).ready(function() {
 
 
     /* ------------------------------------------ */
-    /*  MUTE BUTTON
+    /*  03 - MUTE BUTTON
     /* ------------------------------------------ */
     $("video, iframe").prop('muted', false);
     $(".main-footer__icons-volume").click(function() {
@@ -57,7 +68,7 @@ $(document).ready(function() {
 
 
     /* ------------------------------------------ */
-    /*  READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON
+    /*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON
     /* ------------------------------------------ */
     $(".crew__read-more[data-toggle='collapse']").click(function() {
         if ($(this).html() == '<span></span>roll up') {
@@ -67,10 +78,8 @@ $(document).ready(function() {
         }
     });
 
-
-
     /* ------------------------------------------ */
-    /*  HOME SLIDER
+    /*  05 - HOME SLIDER
     /* ------------------------------------------ */
     if ($('body').hasClass('home-page')) {
         var backgrounds = [
@@ -122,11 +131,10 @@ $(document).ready(function() {
     }
 
 
-
     /* ------------------------------------------ */
-    /*   ONEPAGE SCROLL
+    /*   06 - ONEPAGE SCROLL
     /* ------------------------------------------ */
-    if ($('body').hasClass('video-page') || $('body').hasClass('gallery-page') || $('body').hasClass('crew-page')){
+    if ($('body').hasClass('video-page') || $('body').hasClass('gallery-page') || $('body').hasClass('crew-page') || $('body').hasClass('news-page')){
         $(".main").onepage_scroll({
            sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
            easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -161,22 +169,5 @@ $(document).ready(function() {
            responsiveFallback: true,        // You can fallback to normal page scroll by defining the width of the browser
        });
    };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 });

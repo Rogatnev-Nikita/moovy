@@ -2,7 +2,7 @@
 Template Name: MOOVY
 Author: Rogatnev Nikita
 Version: 1.0.0
-Tags:
+Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean, dark
 */
 
 /* ------------------------------------------ */

@@ -2,7 +2,7 @@
 Template Name: MOOVY
 Author: Rogatnev Nikita
 Version: 1.0.0
-Tags:
+Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean, dark
 */
 
 /* ------------------------------------------ */
@@ -37,21 +37,6 @@ Tags:
 	font-style: normal;
 
 	src: url("../fonts/aqua/aqua.woff2") format("woff2"), url("../fonts/aqua/aqua.woff") format("woff");
-}
-/* Secondary font - Moon light and bold */
-@font-face {
-	font-family: "Moon-Light";
-	font-weight: normal;
-	font-style: normal;
-
-	src: url("../fonts/moon/MoonLight.woff2") format("woff2"), url("../fonts/moon/MoonLight.woff") format("woff");
-}
-@font-face {
-	font-family: "Moon-Bold";
-	font-weight: normal;
-	font-style: normal;
-
-	src: url("../fonts/moon/MoonBold.woff2") format("woff2"), url("../fonts/moon/MoonBold.woff") format("woff");
 }
 
 

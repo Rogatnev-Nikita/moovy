@@ -1,4 +1,4 @@
-# MOOVY — responsive HTML5 template
+# MOOVY — Responsive HTML5 template
 <img src="./dev/preview/preview-1.png">
 http://rogatnev-nikita.github.io/moovy/html/
 

@@ -61,6 +61,15 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /* ------------------------------------------ */
 /*             01 - GENERAL STYLES
 /* ------------------------------------------ */
+/* hide scrollbars */
+* {
+	overflow: -moz-scrollbars-none;
+
+	-ms-overflow-style: none;
+}
+*::-webkit-scrollbar {
+	width: 0;
+}
 html,
 body {
 	z-index: 1;
@@ -119,17 +128,6 @@ button:hover,
 button:active,
 button:visited {
 	outline: none;
-}
-/* hide scrollbars */
-div,
-article {
-	overflow: -moz-scrollbars-none;
-
-	-ms-overflow-style: none;
-}
-div::-webkit-scrollbar,
-article::-webkit-scrollbar {
-	width: 0;
 }
 @media only screen and (min-width: 768px) {
 	body {
@@ -984,7 +982,7 @@ article::-webkit-scrollbar {
 	font-size: 10px;
 	line-height: 1;
 }
-.crew__member > p {
+.crew__member p {
 	margin-top: 10px;
 
 	color: rgba(255, 255, 255, 0.4);
@@ -1189,7 +1187,7 @@ article::-webkit-scrollbar {
 	font-weight: bold;
 	line-height: 1;
 }
-.news__item > p {
+.news__item p {
 	margin-top: 10px;
 
 	color: rgba(255, 255, 255, 0.4);
@@ -1243,6 +1241,33 @@ article::-webkit-scrollbar {
 .news__read-more:hover span:after {
 	background: rgba(255, 255, 255, 0.44);
 }
+.collapse__gallery {
+	display: flex;
+
+	width: 100%;
+	margin: 20px 0 15px;
+	padding: 0;
+
+	text-align: left;
+
+	line-height: 0;
+
+	align-items: flex-start
+
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.collapse__gallery a {
+	display: block;
+
+	width: auto;
+	margin: 0 auto 10px;
+	padding: 0;
+
+	outline: none;
+
+	line-height: 0;
+}
 @media only screen and (min-width: 768px) {
 	.news-page {
 		background-image: url(../images/news/news__bg.jpg);
@@ -1258,8 +1283,6 @@ article::-webkit-scrollbar {
 		        transform: translate(0);
 	}
 	.news__item {
-		overflow: scroll;
-
 		min-width: 180px;
 		max-height: 385px;
 		padding-top: 0;
@@ -1432,37 +1455,6 @@ article::-webkit-scrollbar {
 	}
 	#legal.main-footer__legal-hidden {
 		display: block;
-	}
-}
-
-@media only screen and (max-height: 700px) {
-	.news-page,
-	.crew-page {
-		display: block;
-		overflow-y: visible !important;
-
-		padding-top: 190px;
-	}
-	.main-content-wrapper {
-		position: relative;
-
-		display: block;
-	}
-	.synopsis-page .main-content-wrapper {
-		padding-top: 220px;
-		padding-bottom: 100px;
-	}
-	.main-content__error {
-		margin-top: 70px;
-	}
-	.main-content__line {
-		height: 70px;
-	}
-	.slider-navigation-line {
-		padding: 10px 0;
-	}
-	.main-content {
-		min-height: inherit;
 	}
 }
 
@@ -1719,5 +1711,40 @@ article::-webkit-scrollbar {
 		text-decoration: none;
 
 		outline: none;
+	}
+}
+
+
+/* ------------------------------------------ */
+/*             SMALL HEIGHT FIXES
+/* ------------------------------------------ */
+@media only screen and (max-height: 700px) {
+	.news-page,
+	.crew-page {
+		display: block;
+		overflow-y: visible !important;
+
+		padding-top: 190px;
+	}
+	.main-content-wrapper {
+		position: relative;
+
+		display: block;
+	}
+	.synopsis-page .main-content-wrapper {
+		padding-top: 220px;
+		padding-bottom: 100px;
+	}
+	.main-content__error {
+		margin-top: 70px;
+	}
+	.main-content__line {
+		height: 70px;
+	}
+	.slider-navigation-line {
+		padding: 10px 0;
+	}
+	.main-content {
+		min-height: inherit;
 	}
 }

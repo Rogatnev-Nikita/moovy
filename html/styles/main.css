@@ -1242,7 +1242,10 @@ button:visited {
 	background: rgba(255, 255, 255, 0.44);
 }
 .collapse__gallery {
-	display: flex;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display:         flex;
 
 	width: 100%;
 	margin: 20px 0 15px;
@@ -1252,10 +1255,17 @@ button:visited {
 
 	line-height: 0;
 
-	align-items: flex-start
-
-	justify-content: space-between;
-	flex-wrap: wrap;
+	-webkit-box-align: start;
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	        align-items: flex-start;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
 }
 .collapse__gallery a {
 	display: block;

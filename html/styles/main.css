@@ -28,8 +28,26 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /* ------------------------------------------ */
 /*             00 - FONTS
 /* ------------------------------------------ */
-/* Lato Light and regular as a base font */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+/* lato-300 - latin */
+@font-face {
+	font-family: 'Lato';
+	font-weight: 300;
+	font-style: normal;
+
+	src: local('Lato Light'), local('Lato-Light'),
+	url('../fonts/lato/lato-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/lato/lato-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* lato-regular - latin */
+@font-face {
+	font-family: 'Lato';
+	font-weight: 400;
+	font-style: normal;
+
+	src: local('Lato Regular'), local('Lato-Regular'),
+	url('../fonts/lato/lato-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url('../fonts/lato/lato-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 /* AquaGrotesque for logo and logo description */
 @font-face {
 	font-family: "AquaGrotesque";

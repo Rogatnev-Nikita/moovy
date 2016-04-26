@@ -82,6 +82,18 @@ $(document).ready(function() {
     /*  05 - HOME SLIDER
     /* ------------------------------------------ */
     if ($('body').hasClass('home-page')) {
+        if (window.matchMedia('(max-width: 767px)').matches) {
+        var backgrounds = [
+            'url(./images/home/home__bg_1--mobile.jpg)',
+            'url(./images/home/home__bg_2--mobile.jpg)',
+            'url(./images/home/home__bg_3--mobile.jpg)',
+            'url(./images/home/home__bg_4--mobile.jpg)',
+            'url(./images/home/home__bg_5--mobile.jpg)',
+            'url(./images/home/home__bg_6--mobile.jpg)',
+            'url(./images/home/home__bg_7--mobile.jpg)'
+        ];
+    }
+    else {
         var backgrounds = [
             'url(./images/home/home__bg_1.jpg)',
             'url(./images/home/home__bg_2.jpg)',
@@ -91,6 +103,7 @@ $(document).ready(function() {
             'url(./images/home/home__bg_6.jpg)',
             'url(./images/home/home__bg_7.jpg)'
         ];
+    }
         $('body').css('background-image', backgrounds[0]);
 
         $(".slider-navigation-line:nth-child(1)").click(function() {

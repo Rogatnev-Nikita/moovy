@@ -1607,7 +1607,7 @@ button:visited {
 .modal-box__follow-icon a:hover,
 .modal-box__share-icon a:hover,
 .modal-box__follow-icon a:active,
-.modal-box__share-icon a:active {
+.modal-box__share-icon a:hover, {
 	text-decoration: none;
 }
 .modal-box__follow-icon .fa,

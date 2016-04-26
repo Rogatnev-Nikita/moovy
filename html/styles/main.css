@@ -1648,6 +1648,19 @@ button:visited {
 	border: 5px solid rgba(180, 43, 63, 0.7);
 	background-clip: padding-box;
 }
+.modal-box__follow-icon a:hover,
+.modal-box__share-icon a:hover,
+.modal-box__follow-icon a:active,
+.modal-box__share-icon a:active {
+	width: 80px;
+	height: 80px;
+	margin-top: -5px;
+	margin-left: -2.5px;
+
+	text-decoration: none;
+
+	outline: none;
+}
 @media only screen and (min-width: 768px) {
 	.modal-box {
 		width: 460px;
@@ -1710,17 +1723,6 @@ button:visited {
 	.modal-box__share-icon:nth-child(1) a,
 	.modal-box__share-icon:nth-child(3) a {
 		float: none;
-	}
-	.modal-box__follow-icon a:hover,
-	.modal-box__share-icon a:hover {
-		width: 80px;
-		height: 80px;
-		margin-top: -5px;
-		margin-left: -2.5px;
-
-		text-decoration: none;
-
-		outline: none;
 	}
 }
 

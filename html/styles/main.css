@@ -279,7 +279,8 @@ button:focus {
 
 	background: rgba(255, 255, 255, 0.4);
 }
-.menu__item a {
+.menu__item a,
+.menu__item a:visited {
 	position: relative;
 
 	display: block;

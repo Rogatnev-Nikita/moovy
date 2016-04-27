@@ -432,39 +432,38 @@ button:focus {
 /*             06 - LINE ROTATE
 /* ------------------------------------------ */
 .main-content__rotate {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: -webkit-box;
-	display:         flex;
-	        flex-direction: column;
-
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: column;
-	    -ms-flex-direction: column;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	-webkit-box-align: center;
-	        align-items: center;
-	-ms-flex-line-pack: center;
-	-webkit-align-content: center;
-	        align-content: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	-webkit-box-pack: center;
-	        justify-content: center;
+	-webkit-transform: rotate(-90deg);
+	    -ms-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
 }
-.main-content__line {
-	width: 1px;
-	height: 135px;
-	margin: 0 10px;
+.main-content__rotate h1 {
+	position: relative;
 
-	background: rgba(255, 255, 255, 0.22);
+	overflow: hidden;
+
+	width: 100%;
+	min-width: 250px;
+	margin: 0;
+	padding: 0;
+
+	letter-spacing: 0.3em;
+	text-transform: uppercase;
+
+	color: rgba(255, 255, 255, 0.9);
+
+	font-size: 20px;
+	line-height: 1;
+}
+.main-content__rotate .line {
+	position: absolute;
+
+	width: 100%;
+	margin-top: 10px;
+	margin-left: 20px;
+
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 @media only screen and (min-width: 768px) {
-	.main-content__line {
-		height: 200px;
-	}
 }
 
 
@@ -558,21 +557,8 @@ button:focus {
 .synopsis-page {
 	background-image: url(../images/synopsis/synopsis__bg--mobile.jpg);
 }
-.main-content__synopsis .main-content__line {
-	display: none;
-}
 .main-content__synopsis-description {
 	text-align: center;
-}
-.main-content__synopsis .main-content__rotate h1 {
-	height: auto;
-
-	-webkit-transform: rotate(0deg);
-	    -ms-transform: rotate(0deg);
-	        transform: rotate(0deg);
-
-	font-size: 15px;
-	line-height: 1;
 }
 .main-content__synopsis-description {
 	color: rgba(255, 255, 255, 0.4);
@@ -601,34 +587,6 @@ button:focus {
 		-ms-flex-pack: center;
 		-webkit-box-pack: center;
 		        justify-content: center;
-	}
-	.main-content__synopsis .main-content__rotate {
-		-webkit-transform: translateY(50px);
-		    -ms-transform: translateY(50px);
-		        transform: translateY(50px);
-	}
-	.main-content__synopsis .main-content__rotate h1 {
-		-webkit-transform: rotate(-90deg);
-		    -ms-transform: rotate(-90deg);
-		        transform: rotate(-90deg);
-		text-align: center;
-		letter-spacing: 0.3em;
-		text-transform: uppercase;
-
-		color: rgba(255, 255, 255, 0.9);
-
-		font-size: 20px;
-		line-height: 1;
-	}
-	.main-content__synopsis .main-content__line {
-		display: block;
-
-		height: 160px;
-		margin: 0 10px;
-		margin-top: 80px;
-
-		border-left: 1px solid rgba(255, 255, 255, 0.22);
-		background: transparent;
 	}
 	.main-content__synopsis-description {
 		overflow: visible;
@@ -887,24 +845,6 @@ button:focus {
 	height: 100vh;
 	padding: 0;
 }
-.crew-page .main-content__rotate {
-	position: absolute;
-
-	-webkit-transform: translate(-70%, 80px);
-	    -ms-transform: translate(-70%, 80px);
-	        transform: translate(-70%, 80px);
-}
-.crew-page .main-content__line {
-	height: 100px;
-	margin-top: 100px;
-}
-.crew-page .main-content__rotate h1 {
-	width: 300px;
-	height: auto;
-	margin: 30px 0;
-
-	line-height: 1;
-}
 .crew-page .slider-navigation {
 	display: none;
 }
@@ -1074,24 +1014,6 @@ button:focus {
 
 	height: 100vh;
 	padding: 0;
-}
-.news-page .main-content__rotate {
-	position: absolute;
-
-	-webkit-transform: translate(-70%, 80px);
-	    -ms-transform: translate(-70%, 80px);
-	        transform: translate(-70%, 80px);
-}
-.news-page .main-content__line {
-	height: 230px;
-	margin-top: 0;
-}
-.news-page .main-content__rotate h1 {
-	width: 300px;
-	height: 20px;
-	margin: -50px 0 60px;
-
-	line-height: 1;
 }
 .news-page .slider-navigation {
 	display: none;
@@ -1305,7 +1227,7 @@ button:focus {
 .error-page {
 	background-image: url(../images/error/error__bg--mobile.jpg);
 }
-.main-content__rotate h1 {
+.error-page .main-content__rotate h1 {
 	height: 137px;
 	margin: 30px;
 	padding: 0;
@@ -1736,9 +1658,6 @@ button:focus {
 	}
 	.main-content__error {
 		margin-top: 70px;
-	}
-	.main-content__line {
-		height: 70px;
 	}
 	.slider-navigation-line {
 		padding: 10px 0;

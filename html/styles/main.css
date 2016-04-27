@@ -561,16 +561,15 @@ button:focus {
 .main-content__synopsis .main-content__line {
 	display: none;
 }
-.main-content__synopsis .main-content__rotate h1 {
-	-webkit-transform: rotate(0deg);
-	    -ms-transform: rotate(0deg);
-	        transform: rotate(0deg);
-}
 .main-content__synopsis-description {
 	text-align: center;
 }
 .main-content__synopsis .main-content__rotate h1 {
 	height: auto;
+
+	-webkit-transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
 
 	font-size: 15px;
 	line-height: 1;
@@ -609,10 +608,6 @@ button:focus {
 		        transform: translateY(50px);
 	}
 	.main-content__synopsis .main-content__rotate h1 {
-		height: auto;
-		margin: 0;
-		padding: 0;
-
 		-webkit-transform: rotate(-90deg);
 		    -ms-transform: rotate(-90deg);
 		        transform: rotate(-90deg);

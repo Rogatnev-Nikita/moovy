@@ -77,6 +77,13 @@ $(document).ready(function() {
             $(this).html('<span></span>roll up');
         }
     });
+    $(".news__read-more[data-toggle='collapse']").click(function() {
+        if ($(this).html() == '<span></span>roll up') {
+            $(this).html('<span></span>read more');
+        } else {
+            $(this).html('<span></span>roll up');
+        }
+    });
 
     /* ------------------------------------------ */
     /*  05 - HOME SLIDER

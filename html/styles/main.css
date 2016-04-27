@@ -296,8 +296,7 @@ button:focus {
 	line-height: 1;
 }
 .menu__item a:active,
-.menu__item a:hover,
-.menu__item a:visited {
+.menu__item a:hover {
 	color: rgba(255, 255, 255, 1);
 }
 @media only screen and (min-width: 768px) {

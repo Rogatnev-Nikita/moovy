@@ -1,6 +1,10 @@
 # MOOVY — Responsive HTML5 Template
-<a href="http://rogatnev-nikita.github.io/moovy/html/" rel="some text">![MOOVY]("./dev/preview/preview-1.png")</a>
+[![MOOVY][2]][1]
 
+  [1]: http://rogatnev-nikita.github.io/moovy/html/
+  [2]: dev/preview/preview-1.png (hover text)
+  
+  
 <h4>Summary</h4>
 <ul>
   <li>High Resolution: Yes</li>

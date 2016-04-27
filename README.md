@@ -1,9 +1,7 @@
 # MOOVY — Responsive HTML5 Template
 [![MOOVY][2]][1]
-
   [1]: http://rogatnev-nikita.github.io/moovy/html/
-  [2]: dev/preview/preview-1.png (hover text)
-  
+  [2]: dev/preview/preview-1.png (MOOVY demo)
   
 <h4>Summary</h4>
 <ul>

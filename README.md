@@ -1,5 +1,5 @@
 # MOOVY — Responsive HTML5 Template
-[<img src="./dev/preview/preview-1.png">]:http://rogatnev-nikita.github.io/moovy/html/
+<a href="http://rogatnev-nikita.github.io/moovy/html/" rel="some text">![MOOVY]("./dev/preview/preview-1.png")</a>
 
 <h4>Summary</h4>
 <ul>

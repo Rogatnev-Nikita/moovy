@@ -51,19 +51,21 @@ $(document).ready(function() {
 
 
     /* ------------------------------------------ */
-    /*  03 - MUTE BUTTON
+    /*  03 - BACKGROUND AUDIO (http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100563)
     /* ------------------------------------------ */
-    $("video, iframe").prop('muted', false);
+    $("audio").prop('muted', false);
     $(".main-footer__icons-volume").click(function() {
-        if ($("video").prop('muted')) {
-            $("video").prop('muted', false);
+        if ($("audio").prop('muted')) {
+            $("audio").prop('muted', false);
             $(".main-footer__icons-volume").removeClass('fa-volume-off');
             $(".main-footer__icons-volume").addClass('fa-volume-up');
         } else {
-            $("video").prop('muted', true);
+            $("audio").prop('muted', true);
             $(".main-footer__icons-volume").removeClass('fa-volume-up');
             $(".main-footer__icons-volume").addClass('fa-volume-off');
         }
+
+
     });
 
 

@@ -120,9 +120,11 @@ body:after {
 .onepage-pagination {
 	display: none;
 }
-audio,
 video {
 	width: 100%;
+}
+audio {
+	display: none;
 }
 a,
 a:hover,

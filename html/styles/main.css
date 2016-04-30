@@ -110,7 +110,7 @@ body:after {
 	width: 100%;
 	min-width: 380px;
 	height: 100%;
-	min-height: 100vh;
+	min-height: 100.5vh;
 
 	content: "";
 

@@ -14,7 +14,7 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
 /*  05 - HOME SLIDER  */
 /*  06 - ONEPAGE SCROLL  */
-
+/*  07 - STOP VIDEO WHEN MODAL CLOSE  */
 
 $(document).ready(function() {
 
@@ -191,5 +191,28 @@ $(document).ready(function() {
            responsiveFallback: true,        // You can fallback to normal page scroll by defining the width of the browser
        });
    };
+
+
+   /* ------------------------------------------ */
+   /*   07 - STOP VIDEO WHEN MODAL CLOSE
+   /* ------------------------------------------ */
+   $(".modal").on("hidden.bs.modal", function () {
+       var src = $(this).find('iframe').attr('src');
+       $(this).find('iframe').attr('src', '');
+       $(this).find('iframe').attr('src', src);
+
+       var videosOnPage = 2;
+       for (i = 0; i < videosOnPage; i++) {
+           $(".video-player")[i].load();
+       }
+
+       return false;
+   })
+
+
+
+
+
+
 
 });

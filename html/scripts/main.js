@@ -16,22 +16,22 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /*  06 - ONEPAGE SCROLL  */
 /*  07 - STOP VIDEO WHEN MODAL CLOSE  */
 
-$(document).ready(function() {
+jQuery(document).ready(function() {
 
     /* ------------------------------------------ */
     /*  01 - MENU OVERLAY & HAMBURGER ICON ACTIVE
     /* ------------------------------------------ */
-    $(".main-header__hamburger").click(function() {
-        if ($("body").hasClass("modal-open")) {
-            $(".modal-backdrop").fadeOut("normal", function() {
-                $(this).remove();
+    jQuery(".main-header__hamburger").click(function() {
+        if (jQuery("body").hasClass("modal-open")) {
+            jQuery(".modal-backdrop").fadeOut("normal", function() {
+                jQuery(this).remove();
             });
-            $("body").removeClass('modal-open');
-            $(".main-header__hamburger").removeClass('main-header__hamburger--active');
+            jQuery("body").removeClass('modal-open');
+            jQuery(".main-header__hamburger").removeClass('main-header__hamburger--active');
         } else {
-            $('<div class="modal-backdrop"></div>').fadeIn().appendTo(document.body);
-            $("body").addClass('modal-open');
-            $(".main-header__hamburger").addClass('main-header__hamburger--active');
+            jQuery('<div class="modal-backdrop"></div>').fadeIn().appendTo(document.body);
+            jQuery("body").addClass('modal-open');
+            jQuery(".main-header__hamburger").addClass('main-header__hamburger--active');
         }
     });
 
@@ -39,13 +39,13 @@ $(document).ready(function() {
     /* ------------------------------------------ */
     /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON
     /* ------------------------------------------ */
-    $(".main-footer__legal-toggle[data-toggle='collapse']").click(function() {
-        if ($(this).html() == '<i class="fa fa-chevron-down"></i> HIDE LEGAL') {
-            $(this).html('<i class="fa fa-chevron-up"></i> LEGAL');
-            $(".main-footer").css("background", "rgba(0, 0, 0, 0)");
+    jQuery(".main-footer__legal-toggle[data-toggle='collapse']").click(function() {
+        if (jQuery(this).html() == '<i class="fa fa-chevron-down"></i> HIDE LEGAL') {
+            jQuery(this).html('<i class="fa fa-chevron-up"></i> LEGAL');
+            jQuery(".main-footer").css("background", "rgba(0, 0, 0, 0)");
         } else {
-            $(this).html('<i class="fa fa-chevron-down"></i> HIDE LEGAL');
-            $(".main-footer").css("background", "rgba(0, 0, 0, 1)");
+            jQuery(this).html('<i class="fa fa-chevron-down"></i> HIDE LEGAL');
+            jQuery(".main-footer").css("background", "rgba(0, 0, 0, 1)");
         }
     });
 
@@ -53,44 +53,42 @@ $(document).ready(function() {
     /* ------------------------------------------ */
     /*  03 - BACKGROUND AUDIO (http://incompetech.com/music/royalty-free/index.html?isrc=USUAN1100563)
     /* ------------------------------------------ */
-    $("audio").prop('muted', false);
-    $(".main-footer__icons-volume").click(function() {
-        if ($("audio").prop('muted')) {
-            $("audio").prop('muted', false);
-            $(".main-footer__icons-volume").removeClass('fa-volume-off');
-            $(".main-footer__icons-volume").addClass('fa-volume-up');
+    jQuery("audio").prop('muted', false);
+    jQuery(".main-footer__icons-volume").click(function() {
+        if (jQuery("audio").prop('muted')) {
+            jQuery("audio").prop('muted', false);
+            jQuery(".main-footer__icons-volume").removeClass('fa-volume-off');
+            jQuery(".main-footer__icons-volume").addClass('fa-volume-up');
         } else {
-            $("audio").prop('muted', true);
-            $(".main-footer__icons-volume").removeClass('fa-volume-up');
-            $(".main-footer__icons-volume").addClass('fa-volume-off');
+            jQuery("audio").prop('muted', true);
+            jQuery(".main-footer__icons-volume").removeClass('fa-volume-up');
+            jQuery(".main-footer__icons-volume").addClass('fa-volume-off');
         }
-
-
     });
 
 
     /* ------------------------------------------ */
     /*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON
     /* ------------------------------------------ */
-    $(".crew__read-more[data-toggle='collapse']").click(function() {
-        if ($(this).html() == '<span></span>roll up') {
-            $(this).html('<span></span>read more');
+    jQuery(".crew__read-more[data-toggle='collapse']").click(function() {
+        if (jQuery(this).html() == '<span></span>roll up') {
+            jQuery(this).html('<span></span>read more');
         } else {
-            $(this).html('<span></span>roll up');
+            jQuery(this).html('<span></span>roll up');
         }
     });
-    $(".news__read-more[data-toggle='collapse']").click(function() {
-        if ($(this).html() == '<span></span>roll up') {
-            $(this).html('<span></span>read more');
+    jQuery(".news__read-more[data-toggle='collapse']").click(function() {
+        if (jQuery(this).html() == '<span></span>roll up') {
+            jQuery(this).html('<span></span>read more');
         } else {
-            $(this).html('<span></span>roll up');
+            jQuery(this).html('<span></span>roll up');
         }
     });
 
     /* ------------------------------------------ */
     /*  05 - HOME SLIDER
     /* ------------------------------------------ */
-    if ($('body').hasClass('home-page')) {
+    if (jQuery('body').hasClass('home-page')) {
         if (window.matchMedia('(max-width: 767px)').matches) {
         var backgrounds = [
             'url(./images/home/home__bg_1--mobile.jpg)',
@@ -113,42 +111,42 @@ $(document).ready(function() {
             'url(./images/home/home__bg_7.jpg)'
         ];
     }
-        $('body').css('background-image', backgrounds[0]);
+        jQuery('body').css('background-image', backgrounds[0]);
 
-        $(".slider-navigation-line:nth-child(1)").click(function() {
-            $('body').css('background-image', backgrounds[0]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(1)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(1)").click(function() {
+            jQuery('body').css('background-image', backgrounds[0]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(1)").addClass('slider-navigation-line--active');
         });
-        $(".slider-navigation-line:nth-child(2)").click(function() {
-            $('body').css('background-image', backgrounds[1]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(2)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(2)").click(function() {
+            jQuery('body').css('background-image', backgrounds[1]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(2)").addClass('slider-navigation-line--active');
         });
-        $(".slider-navigation-line:nth-child(3)").click(function() {
-            $('body').css('background-image', backgrounds[2]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(3)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(3)").click(function() {
+            jQuery('body').css('background-image', backgrounds[2]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(3)").addClass('slider-navigation-line--active');
         });
-        $(".slider-navigation-line:nth-child(4)").click(function() {
-            $('body').css('background-image', backgrounds[3]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(4)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(4)").click(function() {
+            jQuery('body').css('background-image', backgrounds[3]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(4)").addClass('slider-navigation-line--active');
         });
-        $(".slider-navigation-line:nth-child(5)").click(function() {
-            $('body').css('background-image', backgrounds[4]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(5)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(5)").click(function() {
+            jQuery('body').css('background-image', backgrounds[4]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(5)").addClass('slider-navigation-line--active');
         });
-        $(".slider-navigation-line:nth-child(6)").click(function() {
-            $('body').css('background-image', backgrounds[5]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(6)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(6)").click(function() {
+            jQuery('body').css('background-image', backgrounds[5]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(6)").addClass('slider-navigation-line--active');
         });
-        $(".slider-navigation-line:nth-child(7)").click(function() {
-            $('body').css('background-image', backgrounds[6]);
-            $(".slider-navigation-line").removeClass('slider-navigation-line--active');
-            $(".slider-navigation-line:nth-child(7)").addClass('slider-navigation-line--active');
+        jQuery(".slider-navigation-line:nth-child(7)").click(function() {
+            jQuery('body').css('background-image', backgrounds[6]);
+            jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
+            jQuery(".slider-navigation-line:nth-child(7)").addClass('slider-navigation-line--active');
         });
     }
 
@@ -156,8 +154,8 @@ $(document).ready(function() {
     /* ------------------------------------------ */
     /*   06 - ONEPAGE SCROLL
     /* ------------------------------------------ */
-    if ($('body').hasClass('video-page') || $('body').hasClass('gallery-page') || $('body').hasClass('crew-page') || $('body').hasClass('news-page')){
-        $(".main").onepage_scroll({
+    if (jQuery('body').hasClass('video-page') || jQuery('body').hasClass('gallery-page') || jQuery('body').hasClass('crew-page') || jQuery('body').hasClass('news-page')){
+        jQuery(".main").onepage_scroll({
            sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
            easing: "cubic-bezier(0.175, 0.885, 0.420, 1.310)",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
                                             // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
@@ -168,20 +166,20 @@ $(document).ready(function() {
 
            },  // This option accepts a callback function. The function will be called before the page moves.
            afterMove: function(index) {
-               var position = $('body').prop('class');
+               var position = jQuery('body').prop('class');
 
                if (position == 'video-page viewing-page-1') {
-                   $(".slider-navigation-number:nth-child(2)").text("1");
-                   $(".slider-navigation a:first-child").addClass('slider-navigation-number--disabled');
+                   jQuery(".slider-navigation-number:nth-child(2)").text("1");
+                   jQuery(".slider-navigation a:first-child").addClass('slider-navigation-number--disabled');
                }
                else if (position == 'viewing-page-2') {
-                   $(".slider-navigation-number:nth-child(2)").text("2");
-                   $(".slider-navigation a:first-child").removeClass('slider-navigation-number--disabled');
-                   $(".slider-navigation a:last-child").removeClass('slider-navigation-number--disabled');
+                   jQuery(".slider-navigation-number:nth-child(2)").text("2");
+                   jQuery(".slider-navigation a:first-child").removeClass('slider-navigation-number--disabled');
+                   jQuery(".slider-navigation a:last-child").removeClass('slider-navigation-number--disabled');
                }
                else {
-                   $(".slider-navigation-number:nth-child(2)").text("3");
-                   $(".slider-navigation a:first-child").addClass('slider-navigation-number--disabled');
+                   jQuery(".slider-navigation-number:nth-child(2)").text("3");
+                   jQuery(".slider-navigation a:first-child").addClass('slider-navigation-number--disabled');
                }
 
 
@@ -196,14 +194,14 @@ $(document).ready(function() {
    /* ------------------------------------------ */
    /*   07 - STOP VIDEO WHEN MODAL CLOSE
    /* ------------------------------------------ */
-   $(".modal").on("hidden.bs.modal", function () {
-       var src = $(this).find('iframe').attr('src');
-       $(this).find('iframe').attr('src', '');
-       $(this).find('iframe').attr('src', src);
+   jQuery(".modal").on("hidden.bs.modal", function () {
+       var src = jQuery(this).find('iframe').attr('src');
+       jQuery(this).find('iframe').attr('src', '');
+       jQuery(this).find('iframe').attr('src', src);
 
        var videosOnPage = 2;
        for (i = 0; i < videosOnPage; i++) {
-           $(".video-player")[i].load();
+           jQuery(".video-player")[i].load();
        }
 
        return false;

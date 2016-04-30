@@ -111,11 +111,11 @@
 
     <!-- ONEPAGE NAVIGATION -->
     <div class="slider-navigation">
-        <a onclick="$('.main').moveUp();" class="slider-navigation-number slider-navigation-number--arrow slider-navigation-number--disabled"><i class="fa fa-chevron-up"></i></a>
+        <a onclick="jQuery('.main').moveUp();" class="slider-navigation-number slider-navigation-number--arrow slider-navigation-number--disabled"><i class="fa fa-chevron-up"></i></a>
         <span class="slider-navigation-number">1</span>
         <span class="slider-navigation-number slider-navigation-number--separator">&#x2015;</span>
         <span class="slider-navigation-number">3</span>
-        <a onclick="$('.main').moveDown();" class="slider-navigation-number slider-navigation-number--arrow"><i class="fa fa-chevron-down"></i></a>
+        <a onclick="jQuery('.main').moveDown();" class="slider-navigation-number slider-navigation-number--arrow"><i class="fa fa-chevron-down"></i></a>
     </div>
     <!-- ONEPAGE NAVIGATION -->
 
@@ -236,11 +236,27 @@
     </div>
     <!-- SHARE MODAL END -->
 
+    <!-- BG AUDIO -->
+    <audio id="mybgplayer">
+        <source src="./audio/Home_Base_Groove.mp3" type="audio/mpeg">
+    </audio>
+    <!-- BG AUDIO END -->
+
     <!-- SCRIPTS -->
-    <script src="./scripts/jquery.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js"></script>
+    <script src="./scripts/bgaudioplayer.js"></script>
     <script src="./scripts/main.js"></script>
-    <script src="./scripts/onepage-scroll.min.js"></script>
+
+    <script>
+        var playerinstance = bgaudioplayer({
+            audioid: 'mybgplayer',
+            autoplay: true,
+            persistTimeLine: true,
+            volume: 1
+        })
+    </script>
     <!-- SCRIPTS END -->
 
 </body>

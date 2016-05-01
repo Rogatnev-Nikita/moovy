@@ -3,7 +3,9 @@
   [1]: http://rogatnev-nikita.github.io/moovy/html/
   [2]: dev/preview/preview-1.png (MOOVY demo)
 MOOVY – Emotional and laconic responsive WordPress theme built specifically for film campaigns and movie marketing (i.e. “Official Movie Site”). In addition to the promotion of the film, also may be used as a showreel of various projects.
+
 Easy and interesting design with support for beautful images or video in the full width of the screen makes the theme Moovy extremely attractive.
+
 This exquisite single purpose theme is perfect for those who appreciate the usability and the loves of orderliness. In truth, can use the following motto for our theme: maximum comfort at a minimum cost.
 
 <h4>Summary</h4>

@@ -127,7 +127,6 @@
             <div class="main-footer__icons col-xs-4 col-sm-2">
                 <button class="fa fa-twitter" data-toggle="modal" data-target="#follow"></button>
                 <button class="fa fa-share-alt" data-toggle="modal" data-target="#share"></button>
-                <button class="main-footer__icons-volume fa fa-volume-up play"></button>
             </div>
             <!-- FOOTER ICONS END -->
 
@@ -189,27 +188,12 @@
     </div>
     <!-- SHARE MODAL END -->
 
-    <!-- BG AUDIO -->
-    <audio id="mybgplayer">
-        <source src="./audio/Home_Base_Groove.mp3" type="audio/mpeg">
-    </audio>
-    <!-- BG AUDIO END -->
 
     <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js"></script>
-    <script src="./scripts/bgaudioplayer.js"></script>
     <script src="./scripts/main.js"></script>
-
-    <script>
-        var playerinstance = bgaudioplayer({
-            audioid: 'mybgplayer',
-            autoplay: true,
-            persistTimeLine: true,
-            volume: 1
-        })
-    </script>
     <!-- SCRIPTS END -->
 
 </body>

@@ -435,6 +435,9 @@ button:focus {
 }
 @media only screen and (min-width: 768px) {
 	.main-content__rotate {
+		position: absolute;
+		left: -130px;
+
 		-webkit-transform: rotate(-90deg);
 		    -ms-transform: rotate(-90deg);
 		        transform: rotate(-90deg);
@@ -446,15 +449,14 @@ button:focus {
 
 		margin: 0;
 
-		-webkit-transform: translateX(-80%);
-		    -ms-transform: translateX(-80%);
-		        transform: translateX(-80%);
+		transform: translateX(-130%);
 		vertical-align: middle;
 	}
 	.main-content__rotate h1:before {
 		display: inline-block;
 
-		width: 100%;
+		width: 90%;
+		max-width: 200px;
 		margin-right: 20px;
 
 		content: "";
@@ -571,6 +573,8 @@ button:focus {
 		background-image: url(../images/synopsis/synopsis__bg.jpg);
 	}
 	.synopsis {
+		position: relative;
+
 		display: -webkit-flex;
 		display: -ms-flexbox;
 		display:         flex;
@@ -866,6 +870,15 @@ button:focus {
 	    -ms-transform: translateY(40px);
 	        transform: translateY(40px);
 }
+.crew__members .main-content__rotate {
+	left: -180px;
+}
+.crew__members .main-content__rotate h1 {
+	transform: translateX(-100%);
+}
+.crew__members .main-content__rotate h1:before {
+	max-width: 140px;
+}
 .crew__member {
 	overflow-y: scroll;
 
@@ -980,8 +993,6 @@ button:focus {
 		        transform: translate(0);
 	}
 	.crew__member {
-		overflow: scroll;
-
 		min-width: 180px;
 		max-height: 385px;
 		padding-top: 0;
@@ -1032,6 +1043,12 @@ button:focus {
 	    -ms-transform: translateY(40px);
 	        transform: translateY(40px);
 }
+.news__items .main-content__rotate h1 {
+	transform: translateX(-230%);
+}
+.news__items .main-content__rotate h1:before {
+	width: 200%;
+}
 .news__item {
 	overflow-y: scroll;
 
@@ -1064,6 +1081,8 @@ button:focus {
 }
 .news__image-withbutton {
 	position: relative;
+
+	overflow: hidden;
 }
 .news__image-withbutton .main-content__play-rounded {
 	position: absolute;
@@ -1211,7 +1230,20 @@ button:focus {
 .error-page {
 	background-image: url(../images/error/error__bg--mobile.jpg);
 }
-.error-page .main-content__rotate h1 {
+.main-content__error {
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+.main-content__error-rotate {
+	min-height: 290px;
+}
+.main-content__error-rotate h1 {
+	position: relative;
+
+	display: inline-block;
+
 	height: 137px;
 	margin: 30px;
 	padding: 0;
@@ -1220,6 +1252,7 @@ button:focus {
 	    -ms-transform: rotate(-90deg);
 	        transform: rotate(-90deg);
 	text-align: center;
+	vertical-align: middle;
 	letter-spacing: 0.3em;
 	text-transform: uppercase;
 
@@ -1227,6 +1260,20 @@ button:focus {
 
 	font-size: 20px;
 	line-height: 137px;
+}
+.main-content__error-rotate h1:before {
+	display: inline-block;
+
+	width: 200px;
+	margin-right: 20px;
+
+	content: "";
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	vertical-align: middle;
+
+	border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 .main-content__error-description h2 {
 	margin: 30px 0;
@@ -1595,7 +1642,8 @@ button:focus {
 @media only screen and (max-height: 700px) {
 	.news-page,
 	.crew-page,
-	.synopsis-page {
+	.synopsis-page,
+	.error-page {
 		display: block;
 		overflow-y: visible !important;
 

@@ -541,7 +541,7 @@ button:focus {
 }
 .slider-navigation-number--disabled,
 .slider-navigation-number--disabled:hover,
-.slider-navigation-number--disabled:visited {
+.slider-navigation-number--disabled:visited{
 	color: rgba(255, 255, 255, 0.22);
 }
 .slider-navigation-number--separator {

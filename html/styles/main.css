@@ -92,6 +92,8 @@ body {
 
 	height: 100vh;
 
+	transition: background 0.5s linear;
+
 	background-color: rgba(0, 0, 0, 1);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -541,7 +543,7 @@ button:focus {
 }
 .slider-navigation-number--disabled,
 .slider-navigation-number--disabled:hover,
-.slider-navigation-number--disabled:visited{
+.slider-navigation-number--disabled:visited {
 	color: rgba(255, 255, 255, 0.22);
 }
 .slider-navigation-number--separator {

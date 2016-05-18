@@ -14,6 +14,7 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
 /*  05 - HOME SLIDER  */
 /*  06 - ONEPAGE SCROLL  */
+"use strict";
 
 jQuery(document).ready(function () {
 

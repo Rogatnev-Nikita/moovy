@@ -988,6 +988,8 @@ button:focus {
 	        align-content: center;
 }
 .crew__read-more:hover {
+	cursor: pointer;
+
 	color: rgba(255, 255, 255, 0.9);
 }
 .crew__read-more span {

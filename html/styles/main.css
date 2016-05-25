@@ -63,12 +63,14 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /* ------------------------------------------ */
 /* hide scrollbars */
 * {
-	overflow: -moz-scrollbars-none;
-
 	-ms-overflow-style: none;
 }
-*::-webkit-scrollbar {
+::-webkit-scrollbar {
+	display: none;
+
 	width: 0;
+
+	background: transparent;
 }
 html,
 body {

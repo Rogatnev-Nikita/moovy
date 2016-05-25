@@ -95,6 +95,7 @@ body {
 
 	-webkit-transition: background 0.5s linear;
 	        transition: background 0.5s linear;
+	/* Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)" */
 
 	background-color: rgba(0, 0, 0, 1);
 	background-repeat: no-repeat;
@@ -557,9 +558,10 @@ button:focus {
 .slider-navigation-number--arrow:hover {
 	color: rgba(255, 255, 255, 0.9);
 }
-.slider-navigation-number--disabled,
-.slider-navigation-number--disabled:hover,
-.slider-navigation-number--disabled:visited {
+.slider-navigation-number--disabled svg,
+.slider-navigation-number--disabled:hover svg,
+.slider-navigation-number--disabled:visited svg {
+	opacity: 0.22;
 	color: rgba(255, 255, 255, 0.22);
 }
 .slider-navigation-number--separator {

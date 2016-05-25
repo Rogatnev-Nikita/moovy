@@ -111,11 +111,19 @@
 
     <!-- ONEPAGE NAVIGATION -->
     <div class="slider-navigation">
-        <a onclick="jQuery('.main').moveUp();" class="slider-navigation-number slider-navigation-number--arrow slider-navigation-number--disabled"><i class="fa fa-chevron-up"></i></a>
+        <a onclick="jQuery('.main').moveUp();" class="slider-navigation-number slider-navigation-number--arrow slider-navigation-number--disabled">
+            <svg width="15" height="15" fill="none">
+                <polyline points="0,15 7,0 15,15" stroke="white" stroke-width="1" />
+            </svg>
+        </a>
         <span class="slider-navigation-number"></span>
         <span class="slider-navigation-number slider-navigation-number--separator">&#x2015;</span>
         <span class="slider-navigation-number"></span>
-        <a onclick="jQuery('.main').moveDown();" class="slider-navigation-number slider-navigation-number--arrow"><i class="fa fa-chevron-down"></i></a>
+        <a onclick="jQuery('.main').moveDown();" class="slider-navigation-number slider-navigation-number--arrow">
+            <svg width="15" height="15" fill="none">
+                <polyline points="0,0 7,15 15,0" stroke="white" stroke-width="1" />
+            </svg>
+        </a>
     </div>
     <!-- ONEPAGE NAVIGATION -->
 

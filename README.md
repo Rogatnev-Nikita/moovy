@@ -68,4 +68,11 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     </ul>
     Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
   </li>
+  <li>
+    <strong>jQuery</strong>
+    <ul>
+      <li>jquery.onepage-scroll.min.js v1.3.1
+    </ul>
+    Licensed under Attribution-ShareAlike 4.0 International (<a href="https://jquery.org/license/" target="_blank">https://github.com/peachananr/onepage-scroll/</a>)
+  </li>
 </ul>

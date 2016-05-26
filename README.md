@@ -55,6 +55,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
   </li>
   <li>
     <strong>jQuery</strong>
+    <ul>
       <li>jquery.js v2.2.3
     </ul>
     <br>Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)

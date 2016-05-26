@@ -50,7 +50,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     <ul>
       <li>font-awesome.min.css v4.5.0
     </ul>
-    <br>Copyright © Dave Gandy
+    Copyright © Dave Gandy
     <br>Licensed under MIT (<a href="http://fontawesome.io/license/" target="_blank">http://fontawesome.io/license/</a>)
   </li>
   <li>
@@ -58,7 +58,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     <ul>
       <li>jquery.js v2.2.3
     </ul>
-    <br>Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
+    Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
   </li>
   <li>
     <strong>Bootstrap</strong>
@@ -66,6 +66,6 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
       <li>bootstrap.min.js v3.3.6
       <li>bootstrap.min.css v3.3.6
     </ul>
-    <br>Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
+    Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
   </li>
 </ul>

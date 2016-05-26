@@ -46,17 +46,20 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
 <h4>Sources & Credits</h4>
 <ul>
   <li>
-    <strong>Font Awesome</strong> font-awesome.min.css v4.5.0
-    <br> Copyright © Dave Gandy
-    <br> Licensed under MIT (<a href="http://fontawesome.io/license/" target="_blank">http://fontawesome.io/license/</a>)
+    <strong>Font Awesome</strong>
+    <br>font-awesome.min.css v4.5.0
+    <br>Copyright © Dave Gandy
+    <br>Licensed under MIT (<a href="http://fontawesome.io/license/" target="_blank">http://fontawesome.io/license/</a>)
   </li>
   <li>
-    <strong>jQuery</strong> jquery.js v2.1.4
-    <br> Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
+    <strong>jQuery</strong>
+    <br>jquery.js v2.2.3
+    <br>Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
   </li>
   <li>
-    <strong>Bootstrap</strong> bootstrap.min.js v3.3.6
+    <strong>Bootstrap</strong>
+    <br>bootstrap.min.js v3.3.6
     <br>bootstrap.min.css v3.3.6
-    <br> Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
+    <br>Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
   </li>
 </ul>

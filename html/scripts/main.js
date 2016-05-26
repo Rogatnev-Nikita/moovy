@@ -160,21 +160,24 @@ jQuery(document).ready(function () {
 			updateURL: false, // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
 			beforeMove: function (index) {}, // This option accepts a callback function. The function will be called before the page moves.
 			afterMove: function (index) {
-				if ($('main > section').hasClass('active')) {
-					jQuery(".slider-navigation-number:nth-child(2)").text($('section.active').attr('data-index'));
+				if (jQuery('main > section').hasClass('active')) {
+					jQuery(".slider-navigation-number:nth-child(2)").text(jQuery('section.active').attr('data-index'));
 				}
-				if (!$('main > section:first-child, main > section:last-child').hasClass('active')) {
+				if (!jQuery('main > section:first-child, main > section:last-child').hasClass('active')) {
 					jQuery(".slider-navigation-number--arrow:first-child").removeClass('slider-navigation-number--disabled');
 					jQuery(".slider-navigation-number--arrow:last-child").removeClass('slider-navigation-number--disabled');
 				}
-				if ($('main > section:first-child').hasClass('active')) {
+				if (jQuery('main > section:first-child').hasClass('active')) {
 					jQuery(".slider-navigation-number--arrow:first-child").addClass('slider-navigation-number--disabled');
 					jQuery(".slider-navigation-number--arrow:last-child").removeClass('slider-navigation-number--disabled');
 				}
-				if ($('main > section:last-child').hasClass('active')) {
+				if (jQuery('main > section:last-child').hasClass('active')) {
 					jQuery(".slider-navigation-number--arrow:first-child").removeClass('slider-navigation-number--disabled');
 					jQuery(".slider-navigation-number--arrow:last-child").addClass('slider-navigation-number--disabled');
 				}
+                if (jQuery('body').hasClass('viewing-page-1')) {
+                    jQuery(".slider-navigation-number--arrow:first-child").addClass('slider-navigation-number--disabled');
+                }
 			}, // This option accepts a callback function. The function will be called after the page moves.
 			loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
 			keyboard: true, // You can activate the keyboard controls

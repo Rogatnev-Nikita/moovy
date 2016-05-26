@@ -74,6 +74,6 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
       <li>jquery.onepage-scroll.min.js v1.3.1
     </ul>
     Copyright © Pete R.
-    Licensed under Attribution-ShareAlike 4.0 International (<a href="https://github.com/peachananr/onepage-scroll/blob/master/README.md" target="_blank">https://github.com/peachananr/onepage-scroll/blob/master/README.md</a>)
+    <br>Licensed under Attribution-ShareAlike 4.0 International (<a href="https://github.com/peachananr/onepage-scroll/blob/master/README.md" target="_blank">https://github.com/peachananr/onepage-scroll/blob/master/README.md</a>)
   </li>
 </ul>

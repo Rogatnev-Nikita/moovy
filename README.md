@@ -11,7 +11,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
 <h4>Summary</h4>
 <ul>
   <li>High Resolution: Yes</li>
-  <li>Compatible Browsers: IE10 +, Firefox, Safari, Opera, Chrome, Edge</li>
+  <li>Compatible Browsers: IE10+, Firefox, Safari, Opera, Chrome, Edge</li>
   <li>Files Included: HTML Files, CSS Files, JS Files</li>
   <li>Columns: 12</li>
   <li>Documentation: Well Documented</li>

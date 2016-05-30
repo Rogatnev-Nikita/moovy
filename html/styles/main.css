@@ -45,16 +45,17 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 	font-style: normal;
 
 	src: local("Lato Regular"), local("Lato-Regular"),
-	url("../fonts/lato/lato-latin-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url("../fonts/lato/lato-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	url("../fonts/lato/lato-latin-regular.woff2") format("woff2"),
+	url("../fonts/lato/lato-latin-regular.woff") format("woff");
 }
-/* AquaGrotesque for logo and logo description */
+/* AquaGrotesque for logo and logo description https://www.behance.net/gallery/AQUA-GROTESQUE-TYPEFACE/14884671 */
 @font-face {
 	font-family: "AquaGrotesque";
 	font-weight: normal;
 	font-style: normal;
 
-	src: url("../fonts/aqua/aqua.woff2") format("woff2"), url("../fonts/aqua/aqua.woff") format("woff");
+	src: url("../fonts/aqua/aqua.woff2") format("woff2"),
+	url("../fonts/aqua/aqua.woff") format("woff");
 }
 
 

@@ -75,7 +75,6 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
 ## Sources & Credits
 * <strong>Font Awesome</strong>  
 		font-awesome.min.css v4.5.0  
-		Copyright © Dave Gandy  
 		[Licensed under MIT](http://fontawesome.io/license/)
 * <strong>jQuery</strong>  
 		jquery.js v2.2.3  

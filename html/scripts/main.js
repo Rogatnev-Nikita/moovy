@@ -49,6 +49,24 @@ jQuery(document).ready(function () {
 		}
 	});
 
+	var lastPos = 0;
+	$(".main-content-wrapper").scroll(function () {
+		var currPos = $(".main-content-wrapper").scrollLeft();
+
+		if (lastPos < currPos) {
+			$(".main-content__rotate").animate({
+				opacity: "0"
+			}, 700);
+		}
+		if (lastPos > currPos) {
+			$(".main-content__rotate").stop().animate({
+				opacity: "1"
+			}, 700);
+		}
+
+		lastPos = currPos;
+	});
+
 	/* ------------------------------------------ */
 	/*   03 - STOP VIDEO WHEN MODAL CLOSE
 	/* ------------------------------------------ */

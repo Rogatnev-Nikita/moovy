@@ -63,7 +63,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     /*  15 — MODALS             */
 
 ## JS structure
-    /*  01 — MENU OVERLAY &amp; HAMBURGER ICON ACTIVE           */
+    /*  01 — MENU OVERLAY & HAMBURGER ICON ACTIVE           */
     /*  02 — LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON      */
     /*  03 — NEWS AND CREW HEADING SCROLL ANIMATION             */
     /*  04 — STOP VIDEO WHEN MODAL CLOSE                        */

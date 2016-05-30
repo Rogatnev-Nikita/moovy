@@ -83,7 +83,6 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
 		[Licensed under MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * <strong>One Page Scroll</strong>  
 		jquery.onepage-scroll.min.js v1.3.1  
-		Copyright © Pete R.  
 		[Licensed under Attribution-ShareAlike 4.0 International](https://github.com/peachananr/onepage-scroll/blob/master/README.md)
 * <strong>Dragscroll</strong>  
 		dragscroll.js  

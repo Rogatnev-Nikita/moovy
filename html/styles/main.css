@@ -1020,7 +1020,6 @@ button:focus {
 		        transform: translate(0);
 	}
 	.crew__member {
-		min-width: 180px;
 		max-height: 385px;
 		padding-top: 0;
 		padding-bottom: 0;
@@ -1247,7 +1246,6 @@ button:focus {
 		        transform: translate(0);
 	}
 	.news__item {
-		min-width: 180px;
 		max-height: 385px;
 		padding-top: 0;
 		padding-bottom: 0;

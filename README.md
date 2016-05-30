@@ -8,7 +8,7 @@ Easy and interesting design with support for beautful images or video in the ful
 
 This exquisite single purpose theme is perfect for those who appreciate the usability and the loves of orderliness. In truth, can use the following motto for our theme: maximum comfort at a minimum cost.
 
-### Summary
+## Summary
 <ul>
   <li>High Resolution: Yes</li>
   <li>Compatible Browsers: IE10+, Firefox, Safari, Opera, Chrome, Edge</li>

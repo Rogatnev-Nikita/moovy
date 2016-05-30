@@ -20,19 +20,22 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
 
 ## File structure
     ROOT FOLDER
-    +-- scripts /
-    ¦  +-- jquery.js
-    ¦  +-- main.js
-    ¦  +-- onepage-scroll.min.js
-    +-- styles /
-    ¦    +-- main.css
-    ¦    +-- onepage-scroll.css
     +-- fonts /
     ¦    +-- aqua /
     ¦        ¦-- aqua.woff
     ¦        ¦-- aqua.woff2
+    ¦    +-- lato /
+    ¦        ¦-- lato-light.woff
+    ¦        ¦-- lato-light.woff2
+    ¦        ¦-- lato-regular.woff
+    ¦        ¦-- lato-regular.woff2
     +-- images /
     ¦    +-- all images
+    +-- scripts /
+    ¦  +-- main.js
+    +-- styles /
+    ¦    +-- main.css
+    ¦    +-- onepage-scroll.css
     +-- 404.html
     +-- crew.html
     +-- gallery.html

@@ -76,4 +76,11 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     Copyright © Pete R.
     <br>Licensed under Attribution-ShareAlike 4.0 International (<a href="https://github.com/peachananr/onepage-scroll/blob/master/README.md" target="_blank">https://github.com/peachananr/onepage-scroll/blob/master/README.md</a>)
   </li>
+    <li>
+    <strong>Dragscroll</strong>
+    <ul>
+      <li>dragscroll.js
+    </ul>
+    Licensed under MIT (<a href="https://github.com/asvd/dragscroll/blob/master/LICENSE" target="_blank">https://github.com/asvd/dragscroll/blob/master/LICENSE</a>)
+  </li>
 </ul>

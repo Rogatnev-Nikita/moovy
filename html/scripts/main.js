@@ -14,7 +14,7 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /*  04 - STOP VIDEO WHEN MODAL CLOSE  */
 /*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
 /*  06 - HOME SLIDER  */
-/*  07 - IMAGES MODAL NEWS PAGE  */
+/*  07 - IMAGES MODAL AT NEWS PAGE  */
 /*  08 - ONEPAGE SCROLL  */
 "use strict";
 
@@ -168,7 +168,7 @@ jQuery(document).ready(function () {
 	}
 
 	/* ------------------------------------------ */
-	/*   07 - IMAGES MODAL NEWS PAGE
+	/*   07 - IMAGES MODAL AT NEWS PAGE
 	/* ------------------------------------------ */
 	$(function () {
 		$('.collapse__gallery').on('click', function () {

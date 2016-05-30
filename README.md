@@ -70,21 +70,21 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     /*  08 - ONEPAGE SCROLL                                     */
 
 ## Sources & Credits
-* <strong>Font Awesome</strong>
+* <strong>Font Awesome</strong>  
 		font-awesome.min.css v4.5.0  
 		Copyright © Dave Gandy  
 		[Licensed under MIT](http://fontawesome.io/license/)
-* <strong>jQuery</strong>
+* <strong>jQuery</strong>  
 		jquery.js v2.2.3  
 		[Licensed under MIT](https://jquery.org/license/)
-* <strong>Bootstrap</strong>
+* <strong>Bootstrap</strong>  
 		bootstrap.min.js v3.3.6  
 		bootstrap.min.css v3.3.6  
 		[Licensed under MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
-* <strong>One Page Scroll</strong>
+* <strong>One Page Scroll</strong>  
 		jquery.onepage-scroll.min.js v1.3.1  
 		Copyright © Pete R.  
 		[Licensed under Attribution-ShareAlike 4.0 International](https://github.com/peachananr/onepage-scroll/blob/master/README.md)
-* <strong>Dragscroll</strong>
+* <strong>Dragscroll</strong>  
 		dragscroll.js  
 		[Licensed under MIT](https://github.com/asvd/dragscroll/blob/master/LICENSE)

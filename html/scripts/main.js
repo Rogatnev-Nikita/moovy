@@ -13,7 +13,8 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /*  03 - STOP VIDEO WHEN MODAL CLOSE  */
 /*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
 /*  05 - HOME SLIDER  */
-/*  06 - ONEPAGE SCROLL  */
+/*  06 - IMAGES MODAL NEWS PAGE  */
+/*  07 - ONEPAGE SCROLL  */
 "use strict";
 
 jQuery(document).ready(function () {
@@ -52,7 +53,7 @@ jQuery(document).ready(function () {
 	/*   03 - STOP VIDEO WHEN MODAL CLOSE
 	/* ------------------------------------------ */
 	jQuery(".modal").on("hidden.bs.modal", function () {
-        jQuery('.modal video').attr("src", jQuery(".modal video").attr("src"));
+		jQuery('.modal video').attr("src", jQuery(".modal video").attr("src"));
 
 		var src = jQuery(this).find('iframe').attr('src');
 		jQuery(this).find('iframe').attr('src', '');
@@ -147,7 +148,17 @@ jQuery(document).ready(function () {
 	}
 
 	/* ------------------------------------------ */
-	/*   06 - ONEPAGE SCROLL
+	/*   06 - IMAGES MODAL NEWS PAGE
+	/* ------------------------------------------ */
+	$(function () {
+		$('.collapse__gallery').on('click', function () {
+			$('.modal-box__image').attr('src', $(this).find('img').attr('src'));
+			$('#images').modal('show');
+		});
+	});
+
+	/* ------------------------------------------ */
+	/*   07 - ONEPAGE SCROLL
 	/* ------------------------------------------ */
 	if (jQuery('body').hasClass('video-page') || jQuery('body').hasClass('gallery-page') || jQuery('body').hasClass('crew-page') || jQuery('body').hasClass('news-page')) {
 
@@ -178,9 +189,9 @@ jQuery(document).ready(function () {
 					jQuery(".slider-navigation-number--arrow:first-child").removeClass('slider-navigation-number--disabled');
 					jQuery(".slider-navigation-number--arrow:last-child").addClass('slider-navigation-number--disabled');
 				}
-                if (jQuery('body').hasClass('viewing-page-1')) {
-                    jQuery(".slider-navigation-number--arrow:first-child").addClass('slider-navigation-number--disabled');
-                }
+				if (jQuery('body').hasClass('viewing-page-1')) {
+					jQuery(".slider-navigation-number--arrow:first-child").addClass('slider-navigation-number--disabled');
+				}
 			}, // This option accepts a callback function. The function will be called after the page moves.
 			loop: false, // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
 			keyboard: true, // You can activate the keyboard controls

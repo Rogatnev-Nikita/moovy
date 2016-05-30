@@ -43,6 +43,34 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     +-- synopsis.html
     +-- video.html
 
+<h4>CSS structure</h4>
+    /*  00 - FONTS  */
+    /*  01 - GENERAL STYLES  */
+    /*  02 - HEADER  */
+    /*  03 - MENU DROPDOWN  */
+    /*  04 - MAIN CONTENT  */
+    /*  05 - HOME PAGE  */
+    /*  06 - LINE ROTATE  */
+    /*  07 - SLIDER NAVIGATION  */
+    /*  08 - SYNOPSIS PAGE  */
+    /*  09 - GALLERY PAGE  */
+    /*  10 - VIDEO PAGE  */
+    /*  11 - CREW PAGE  */
+    /*  12 - NEWS PAGE  */
+    /*  13 - 404 PAGE  */
+    /*  14 - FOOTER  */
+    /*  15 - MODALS  */
+
+<h4>JS structure</h4>
+    /*  01 - MENU OVERLAY &amp; HAMBURGER ICON ACTIVE  */
+    /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+    /*  03 - NEWS AND CREW HEADING SCROLL ANIMATION  */
+    /*  04 - STOP VIDEO WHEN MODAL CLOSE  */
+    /*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+    /*  06 - HOME SLIDER  */
+    /*  07 - IMAGES MODAL AT NEWS PAGE  */
+    /*  08 - ONEPAGE SCROLL  */
+
 <h4>Sources & Credits</h4>
 <ul>
   <li>

@@ -8,7 +8,7 @@ Easy and interesting design with support for beautful images or video in the ful
 
 This exquisite single purpose theme is perfect for those who appreciate the usability and the loves of orderliness. In truth, can use the following motto for our theme: maximum comfort at a minimum cost.
 
-<h4>Summary</h4>
+### Summary
 <ul>
   <li>High Resolution: Yes</li>
   <li>Compatible Browsers: IE10+, Firefox, Safari, Opera, Chrome, Edge</li>
@@ -20,7 +20,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
   <li>Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean, darks</li>
 </ul>
 
-<h4>File structure</h4>
+### File structure
     ROOT FOLDER
     +-- scripts /
     ¦  +-- jquery.js
@@ -43,7 +43,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     +-- synopsis.html
     +-- video.html
 
-<h4>CSS structure</h4>
+### CSS structure
     /*  00 - FONTS  */
     /*  01 - GENERAL STYLES  */
     /*  02 - HEADER  */
@@ -61,7 +61,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     /*  14 - FOOTER  */
     /*  15 - MODALS  */
 
-<h4>JS structure</h4>
+### JS structure
     /*  01 - MENU OVERLAY &amp; HAMBURGER ICON ACTIVE  */
     /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
     /*  03 - NEWS AND CREW HEADING SCROLL ANIMATION  */
@@ -71,7 +71,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     /*  07 - IMAGES MODAL AT NEWS PAGE  */
     /*  08 - ONEPAGE SCROLL  */
 
-<h4>Sources & Credits</h4>
+### Sources & Credits
 <ul>
   <li>
     <strong>Font Awesome</strong>

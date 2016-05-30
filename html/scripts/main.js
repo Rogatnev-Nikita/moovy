@@ -8,14 +8,14 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
-/*  01 - MENU OVERLAY & HAMBURGER ICON ACTIVE  */
-/*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-/*  03 - NEWS AND CREW HEADING SCROLL ANIMATION  */
-/*  04 - STOP VIDEO WHEN MODAL CLOSE  */
-/*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-/*  06 - HOME SLIDER  */
-/*  07 - IMAGES MODAL AT NEWS PAGE  */
-/*  08 - ONEPAGE SCROLL  */
+/*  01 — MENU OVERLAY &amp; HAMBURGER ICON ACTIVE           */
+/*  02 — LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON      */
+/*  03 — NEWS AND CREW HEADING SCROLL ANIMATION             */
+/*  04 — STOP VIDEO WHEN MODAL CLOSE                        */
+/*  05 — READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+/*  06 — HOME SLIDER                                        */
+/*  07 — IMAGES MODAL AT NEWS PAGE                          */
+/*  08 — ONEPAGE SCROLL                                     */
 "use strict";
 
 jQuery(document).ready(function () {

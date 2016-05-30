@@ -70,19 +70,22 @@
             <p>When you download the MOOVY theme folder you'll see something like this:</p>
             <pre>
     ROOT FOLDER
-    +-- scripts /
-    ¦  +-- jquery.js
-    ¦  +-- main.js
-    ¦  +-- onepage-scroll.min.js
-    +-- styles /
-    ¦    +-- main.css
-    ¦    +-- onepage-scroll.css
     +-- fonts /
     ¦    +-- aqua /
     ¦        ¦-- aqua.woff
     ¦        ¦-- aqua.woff2
+    ¦    +-- lato /
+    ¦        ¦-- lato-light.woff
+    ¦        ¦-- lato-light.woff2
+    ¦        ¦-- lato-regular.woff
+    ¦        ¦-- lato-regular.woff2
     +-- images /
     ¦    +-- all images
+    +-- scripts /
+    ¦  +-- main.js
+    +-- styles /
+    ¦    +-- main.css
+    ¦    +-- onepage-scroll.css
     +-- 404.html
     +-- crew.html
     +-- gallery.html
@@ -98,22 +101,22 @@
             <h2>CSS Structure</h2>
             <p>CSS structured in this template are as follows:</p>
             <pre>
-    /*  00 - FONTS  */
-    /*  01 - GENERAL STYLES  */
-    /*  02 - HEADER  */
-    /*  03 - MENU DROPDOWN  */
-    /*  04 - MAIN CONTENT  */
-    /*  05 - HOME PAGE  */
-    /*  06 - LINE ROTATE  */
-    /*  07 - SLIDER NAVIGATION  */
-    /*  08 - SYNOPSIS PAGE  */
-    /*  09 - GALLERY PAGE  */
-    /*  10 - VIDEO PAGE  */
-    /*  11 - CREW PAGE  */
-    /*  12 - NEWS PAGE  */
-    /*  13 - 404 PAGE  */
-    /*  14 - FOOTER  */
-    /*  15 - MODALS  */</pre>
+    /*  00 — FONTS              */
+    /*  01 — GENERAL STYLES     */
+    /*  02 — HEADER             */
+    /*  03 — MENU DROPDOWN      */
+    /*  04 — MAIN CONTENT       */
+    /*  05 — HOME PAGE          */
+    /*  06 — LINE ROTATE        */
+    /*  07 — SLIDER NAVIGATION  */
+    /*  08 — SYNOPSIS PAGE      */
+    /*  09 — GALLERY PAGE       */
+    /*  10 — VIDEO PAGE         */
+    /*  11 — CREW PAGE          */
+    /*  12 — NEWS PAGE          */
+    /*  13 — 404 PAGE           */
+    /*  14 — FOOTER             */
+    /*  15 — MODALS             */</pre>
         </section>
         <!-- CSS STRUCTURE END -->
 
@@ -122,14 +125,14 @@
             <h2>JS Structure</h2>
             <p>JS structured in this template are as follows:</p>
             <pre>
-    /*  01 - MENU OVERLAY &amp; HAMBURGER ICON ACTIVE  */
-    /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-    /*  03 - NEWS AND CREW HEADING SCROLL ANIMATION  */
-    /*  04 - STOP VIDEO WHEN MODAL CLOSE  */
-    /*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-    /*  06 - HOME SLIDER  */
-    /*  07 - IMAGES MODAL AT NEWS PAGE  */
-    /*  08 - ONEPAGE SCROLL  */</pre>
+    /*  01 — MENU OVERLAY &amp; HAMBURGER ICON ACTIVE           */
+    /*  02 — LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON      */
+    /*  03 — NEWS AND CREW HEADING SCROLL ANIMATION             */
+    /*  04 — STOP VIDEO WHEN MODAL CLOSE                        */
+    /*  05 — READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+    /*  06 — HOME SLIDER                                        */
+    /*  07 — IMAGES MODAL AT NEWS PAGE                          */
+    /*  08 — ONEPAGE SCROLL                                     */</pre>
         </section>
         <!-- JS STRUCTURE END -->
 
@@ -162,11 +165,14 @@
                     much simpler with an easy-to-use API that works across a multitude of browsers.
                 </li>
                 <li>
-                    <strong>main.js</strong> Contents javascripts code to initialize other js plugins and functions.
-                </li>
-                <li>
                     <strong><a href="https://github.com/peachananr/onepage-scroll" target="_blank">onepage-scroll.min.js</a></strong> One Page Scroll let you transform your website into a one page scroll website that allows users to scroll one page at
                     a time.
+                </li>
+                <li>
+                    <strong><a href="https://github.com/asvd/dragscroll/" target="_blank">dragscroll.js</a></strong> Dragscroll is a micro JavaScript library which enables scrolling via holding the mouse button.
+                </li>
+                <li>
+                    <strong>main.js</strong> Contents javascripts code to initialize other js plugins and functions.
                 </li>
             </ul>
         </section>
@@ -177,42 +183,25 @@
             <h2>Sources &amp; Credits</h2>
             <ul>
                 <li>
-                    <strong>Font Awesome</strong>
-                    <ul>
-                        <li>font-awesome.min.css v4.5.0</li>
-                    </ul>
-                    Copyright © Dave Gandy
+                    <strong>Font Awesome</strong> font-awesome.min.css v4.5.0
                     <br>Licensed under MIT (<a href="http://fontawesome.io/license/" target="_blank">http://fontawesome.io/license/</a>)
                 </li>
                 <li>
-                    <strong>jQuery</strong>
-                    <ul>
-                        <li>jquery.js v2.2.3</li>
-                    </ul>
-                    Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
+                    <strong>jQuery</strong> jquery.js v2.2.3
+                    <br>Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
                 </li>
                 <li>
-                    <strong>Bootstrap</strong>
-                    <ul>
-                        <li>bootstrap.min.js v3.3.6</li>
-                        <li>bootstrap.min.css v3.3.6</li>
-                    </ul>
-                    Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
+                    <strong>Bootstrap</strong> bootstrap.min.js v3.3.6
+                    <br>bootstrap.min.css v3.3.6
+                    <br>Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
                 </li>
                 <li>
-                    <strong>One Page Scroll</strong>
-                    <ul>
-                        <li>jquery.onepage-scroll.min.js v1.3.1</li>
-                    </ul>
-                    Copyright © Pete R.
+                    <strong>One Page Scroll</strong> jquery.onepage-scroll.min.js v1.3.1
                     <br>Licensed under Attribution-ShareAlike 4.0 International (<a href="https://github.com/peachananr/onepage-scroll/blob/master/README.md" target="_blank">https://github.com/peachananr/onepage-scroll/blob/master/README.md</a>)
                 </li>
                 <li>
-                    <strong>Dragscroll</strong>
-                    <ul>
-                        <li>dragscroll.js</li>
-                    </ul>
-                    Licensed under MIT (<a href="https://github.com/asvd/dragscroll/blob/master/LICENSE" target="_blank">https://github.com/asvd/dragscroll/blob/master/LICENSE</a>)
+                    <strong>Dragscroll</strong> dragscroll.js
+                    <br>Licensed under MIT (<a href="https://github.com/asvd/dragscroll/blob/master/LICENSE" target="_blank">https://github.com/asvd/dragscroll/blob/master/LICENSE</a>)
                 </li>
             </ul>
             <p class="autor">Regards,

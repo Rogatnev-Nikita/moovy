@@ -8,45 +8,45 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /* ------------------------------------------ */
 /*             TABLE OF CONTENTS
 /* ------------------------------------------ */
-/*  00 - FONTS  */
-/*  01 - GENERAL STYLES  */
-/*  02 - HEADER  */
-/*  03 - MENU DROPDOWN  */
-/*  04 - MAIN CONTENT  */
-/*  05 - HOME PAGE  */
-/*  06 - LINE ROTATE  */
-/*  07 - SLIDER NAVIGATION  */
-/*  08 - SYNOPSIS PAGE  */
-/*  09 - GALLERY PAGE  */
-/*  10 - VIDEO PAGE  */
-/*  11 - CREW PAGE  */
-/*  12 - NEWS PAGE  */
-/*  13 - 404 PAGE  */
-/*  14 - FOOTER  */
-/*  15 - MODALS  */
+/*  00 — FONTS              */
+/*  01 — GENERAL STYLES     */
+/*  02 — HEADER             */
+/*  03 — MENU DROPDOWN      */
+/*  04 — MAIN CONTENT       */
+/*  05 — HOME PAGE          */
+/*  06 — LINE ROTATE        */
+/*  07 — SLIDER NAVIGATION  */
+/*  08 — SYNOPSIS PAGE      */
+/*  09 — GALLERY PAGE       */
+/*  10 — VIDEO PAGE         */
+/*  11 — CREW PAGE          */
+/*  12 — NEWS PAGE          */
+/*  13 — 404 PAGE           */
+/*  14 — FOOTER             */
+/*  15 — MODALS             */
 
 /* ------------------------------------------ */
 /*             00 - FONTS
 /* ------------------------------------------ */
-/* lato-300 - latin */
+/* Lato light */
 @font-face {
 	font-family: "Lato";
 	font-weight: 300;
 	font-style: normal;
 
 	src: local("Lato Light"), local("Lato-Light"),
-	url("../fonts/lato/lato-latin-300.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
-	url("../fonts/lato/lato-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+	url("../fonts/lato/lato-light.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */
+	url("../fonts/lato/lato-light.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-/* lato-regular - latin */
+/* Lato regular */
 @font-face {
 	font-family: "Lato";
 	font-weight: 400;
 	font-style: normal;
 
 	src: local("Lato Regular"), local("Lato-Regular"),
-	url("../fonts/lato/lato-latin-regular.woff2") format("woff2"),
-	url("../fonts/lato/lato-latin-regular.woff") format("woff");
+	url("../fonts/lato/lato-regular.woff2") format("woff2"),
+	url("../fonts/lato/lato-regular.woff") format("woff");
 }
 /* AquaGrotesque for logo and logo description https://www.behance.net/gallery/AQUA-GROTESQUE-TYPEFACE/14884671 */
 @font-face {

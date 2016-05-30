@@ -42,49 +42,49 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     +-- video.html
 
 ## CSS structure
-    /*  00 - FONTS              */
-    /*  01 - GENERAL STYLES     */
-    /*  02 - HEADER             */
-    /*  03 - MENU DROPDOWN      */
-    /*  04 - MAIN CONTENT       */
-    /*  05 - HOME PAGE          */
-    /*  06 - LINE ROTATE        */
-    /*  07 - SLIDER NAVIGATION  */
-    /*  08 - SYNOPSIS PAGE      */
-    /*  09 - GALLERY PAGE       */
-    /*  10 - VIDEO PAGE         */
-    /*  11 - CREW PAGE          */
-    /*  12 - NEWS PAGE          */
-    /*  13 - 404 PAGE           */
-    /*  14 - FOOTER             */
-    /*  15 - MODALS             */
+    /*  00 — FONTS              */
+    /*  01 — GENERAL STYLES     */
+    /*  02 — HEADER             */
+    /*  03 — MENU DROPDOWN      */
+    /*  04 — MAIN CONTENT       */
+    /*  05 — HOME PAGE          */
+    /*  06 — LINE ROTATE        */
+    /*  07 — SLIDER NAVIGATION  */
+    /*  08 — SYNOPSIS PAGE      */
+    /*  09 — GALLERY PAGE       */
+    /*  10 — VIDEO PAGE         */
+    /*  11 — CREW PAGE          */
+    /*  12 — NEWS PAGE          */
+    /*  13 — 404 PAGE           */
+    /*  14 — FOOTER             */
+    /*  15 — MODALS             */
 
 ## JS structure
-    /*  01 - MENU OVERLAY &amp; HAMBURGER ICON ACTIVE           */
-    /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON      */
-    /*  03 - NEWS AND CREW HEADING SCROLL ANIMATION             */
-    /*  04 - STOP VIDEO WHEN MODAL CLOSE                        */
-    /*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-    /*  06 - HOME SLIDER                                        */
-    /*  07 - IMAGES MODAL AT NEWS PAGE                          */
-    /*  08 - ONEPAGE SCROLL                                     */
+    /*  01 — MENU OVERLAY &amp; HAMBURGER ICON ACTIVE           */
+    /*  02 — LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON      */
+    /*  03 — NEWS AND CREW HEADING SCROLL ANIMATION             */
+    /*  04 — STOP VIDEO WHEN MODAL CLOSE                        */
+    /*  05 — READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+    /*  06 — HOME SLIDER                                        */
+    /*  07 — IMAGES MODAL AT NEWS PAGE                          */
+    /*  08 — ONEPAGE SCROLL                                     */
 
 ## Sources & Credits
 * <strong>Font Awesome</strong>  
-		font-awesome.min.css v4.5.0  
+		— font-awesome.min.css v4.5.0  
 		Copyright © Dave Gandy  
 		[Licensed under MIT](http://fontawesome.io/license/)
 * <strong>jQuery</strong>  
-		jquery.js v2.2.3  
+		— jquery.js v2.2.3  
 		[Licensed under MIT](https://jquery.org/license/)
 * <strong>Bootstrap</strong>  
-		bootstrap.min.js v3.3.6  
-		bootstrap.min.css v3.3.6  
+		— bootstrap.min.js v3.3.6  
+		— bootstrap.min.css v3.3.6  
 		[Licensed under MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
 * <strong>One Page Scroll</strong>  
-		jquery.onepage-scroll.min.js v1.3.1  
+		— jquery.onepage-scroll.min.js v1.3.1  
 		Copyright © Pete R.  
 		[Licensed under Attribution-ShareAlike 4.0 International](https://github.com/peachananr/onepage-scroll/blob/master/README.md)
 * <strong>Dragscroll</strong>  
-		dragscroll.js  
+		— dragscroll.js  
 		[Licensed under MIT](https://github.com/asvd/dragscroll/blob/master/LICENSE)

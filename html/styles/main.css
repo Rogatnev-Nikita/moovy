@@ -1044,9 +1044,6 @@ button:focus {
 	height: 100vh;
 	padding: 0;
 }
-.news-page .slider-navigation {
-	display: none;
-}
 .news__items {
 	position: relative;
 
@@ -1056,6 +1053,7 @@ button:focus {
 	display:         flex;
 	        flex-direction: row;
 
+	min-width: 100%;
 	padding: 0;
 
 	-webkit-box-orient: horizontal;
@@ -1242,12 +1240,6 @@ button:focus {
 @media only screen and (min-width: 768px) {
 	.news-page {
 		background-image: url(../images/news/news__bg.jpg);
-	}
-	.news-page .slider-navigation {
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: -webkit-box;
-		display:         flex;
 	}
 	.news__items {
 		-webkit-transform: translate(0);

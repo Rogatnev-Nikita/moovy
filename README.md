@@ -70,52 +70,21 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     /*  08 - ONEPAGE SCROLL                                     */
 
 ## Sources & Credits
-
-*   <strong>Font Awesome</strong>
-		* font-awesome.min.css v4.5.0
-		* Copyright © Dave Gandy
-		* Licensed under MIT (<a href="http://fontawesome.io/license/" target="_blank">http://fontawesome.io/license/</a>)
-*   Bubbles
-
-
-	*   Abacus
-		* answer
-	*   Bubbles
-		1.  bunk
-		2.  bupkis
-			* BELITTLER
-		3. burper
-	*   Cunning
-	*   
-	
-  <li>
-    <strong>jQuery</strong>
-    <ul>
-      <li>jquery.js v2.2.3
-    </ul>
-    Licensed under MIT (<a href="https://jquery.org/license/" target="_blank">https://jquery.org/license/</a>)
-
-  <li>
-    <strong>Bootstrap</strong>
-    <ul>
-      <li>bootstrap.min.js v3.3.6
-      <li>bootstrap.min.css v3.3.6
-    </ul>
-    Licensed under MIT (<a href="https://github.com/twbs/bootstrap/blob/master/LICENSE" target="_blank">https://github.com/twbs/bootstrap/blob/master/LICENSE</a>)
-
-  <li>
-    <strong>One Page Scroll</strong>
-    <ul>
-      <li>jquery.onepage-scroll.min.js v1.3.1
-    </ul>
-    Copyright © Pete R.
-    <br>Licensed under Attribution-ShareAlike 4.0 International (<a href="https://github.com/peachananr/onepage-scroll/blob/master/README.md" target="_blank">https://github.com/peachananr/onepage-scroll/blob/master/README.md</a>)
-
-    <li>
-    <strong>Dragscroll</strong>
-    <ul>
-      <li>dragscroll.js
-    </ul>
-    Licensed under MIT (<a href="https://github.com/asvd/dragscroll/blob/master/LICENSE" target="_blank">https://github.com/asvd/dragscroll/blob/master/LICENSE</a>)
-
-</ul>
+* <strong>Font Awesome</strong>
+		font-awesome.min.css v4.5.0  
+		Copyright © Dave Gandy  
+		[Licensed under MIT](http://fontawesome.io/license/)
+* <strong>jQuery</strong>
+		jquery.js v2.2.3  
+		[Licensed under MIT](https://jquery.org/license/)
+* <strong>Bootstrap</strong>
+		bootstrap.min.js v3.3.6  
+		bootstrap.min.css v3.3.6  
+		[Licensed under MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)
+* <strong>One Page Scroll</strong>
+		jquery.onepage-scroll.min.js v1.3.1  
+		Copyright © Pete R.  
+		[Licensed under Attribution-ShareAlike 4.0 International](https://github.com/peachananr/onepage-scroll/blob/master/README.md)
+* <strong>Dragscroll</strong>
+		dragscroll.js  
+		[Licensed under MIT](https://github.com/asvd/dragscroll/blob/master/LICENSE)

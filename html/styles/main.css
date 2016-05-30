@@ -1233,7 +1233,7 @@ button:focus {
 
 	line-height: 0;
 }
-.modal-box__image img {
+.modal-box__image-box img {
 	width: 100%;
 }
 @media only screen and (min-width: 768px) {

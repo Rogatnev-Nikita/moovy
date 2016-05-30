@@ -52,6 +52,8 @@ jQuery(document).ready(function () {
 	/*   03 - STOP VIDEO WHEN MODAL CLOSE
 	/* ------------------------------------------ */
 	jQuery(".modal").on("hidden.bs.modal", function () {
+        jQuery('.modal video').attr("src", jQuery(".modal video").attr("src"));
+
 		var src = jQuery(this).find('iframe').attr('src');
 		jQuery(this).find('iframe').attr('src', '');
 		jQuery(this).find('iframe').attr('src', src);
@@ -141,6 +143,7 @@ jQuery(document).ready(function () {
 			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
 			jQuery(".slider-navigation-line:nth-child(7)").addClass('slider-navigation-line--active');
 		});
+
 	}
 
 	/* ------------------------------------------ */

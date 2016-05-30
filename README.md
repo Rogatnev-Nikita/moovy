@@ -10,7 +10,7 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
 
 ## Summary
 * High Resolution: Yes
-* Compatible Browsers: IE10+, Firefox, Safari, Opera, Chrome, Edge
+* Compatible Browsers: IE10+, Edge, Firefox, Safari, Opera, Chrome
 * Files Included: HTML Files, CSS Files, JS Files
 * Columns: 12
 * Documentation: Well Documented

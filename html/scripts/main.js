@@ -10,11 +10,12 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /* ------------------------------------------ */
 /*  01 - MENU OVERLAY & HAMBURGER ICON ACTIVE  */
 /*  02 - LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-/*  03 - STOP VIDEO WHEN MODAL CLOSE  */
-/*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-/*  05 - HOME SLIDER  */
-/*  06 - IMAGES MODAL NEWS PAGE  */
-/*  07 - ONEPAGE SCROLL  */
+/*  03 - NEWS AND CREW HEADING SCROLL ANIMATION  */
+/*  04 - STOP VIDEO WHEN MODAL CLOSE  */
+/*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
+/*  06 - HOME SLIDER  */
+/*  07 - IMAGES MODAL NEWS PAGE  */
+/*  08 - ONEPAGE SCROLL  */
 "use strict";
 
 jQuery(document).ready(function () {
@@ -49,26 +50,27 @@ jQuery(document).ready(function () {
 		}
 	});
 
+	/* ------------------------------------------ */
+	/*  03 - NEWS AND CREW HEADING SCROLL ANIMATION
+    /* ------------------------------------------ */
 	var lastPos = 0;
-	$(".main-content-wrapper").scroll(function () {
-		var currPos = $(".main-content-wrapper").scrollLeft();
-
+	jQuery(".main-content-wrapper").scroll(function () {
+		var currPos = jQuery(".main-content-wrapper").scrollLeft();
 		if (lastPos < currPos) {
-			$(".main-content__rotate").animate({
+			jQuery(".main-content__rotate").animate({
 				opacity: "0"
 			}, 700);
 		}
 		if (lastPos > currPos) {
-			$(".main-content__rotate").stop().animate({
+			jQuery(".main-content__rotate").stop().animate({
 				opacity: "1"
 			}, 700);
 		}
-
 		lastPos = currPos;
 	});
 
 	/* ------------------------------------------ */
-	/*   03 - STOP VIDEO WHEN MODAL CLOSE
+	/*   04 - STOP VIDEO WHEN MODAL CLOSE
 	/* ------------------------------------------ */
 	jQuery(".modal").on("hidden.bs.modal", function () {
 		jQuery('.modal video').attr("src", jQuery(".modal video").attr("src"));
@@ -84,7 +86,7 @@ jQuery(document).ready(function () {
 	})
 
 	/* ------------------------------------------ */
-	/*  04 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON
+	/*  05 - READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON
 	/* ------------------------------------------ */
 	jQuery(".crew__read-more[data-toggle='collapse']").click(function () {
 		if (jQuery(this).html() == '<span></span>roll up') {
@@ -102,7 +104,7 @@ jQuery(document).ready(function () {
 	});
 
 	/* ------------------------------------------ */
-	/*  05 - HOME SLIDER
+	/*  06 - HOME SLIDER
 	/* ------------------------------------------ */
 	if (jQuery('body').hasClass('home-page')) {
 		if (window.matchMedia('(max-width: 767px)').matches) {
@@ -166,7 +168,7 @@ jQuery(document).ready(function () {
 	}
 
 	/* ------------------------------------------ */
-	/*   06 - IMAGES MODAL NEWS PAGE
+	/*   07 - IMAGES MODAL NEWS PAGE
 	/* ------------------------------------------ */
 	$(function () {
 		$('.collapse__gallery').on('click', function () {
@@ -176,7 +178,7 @@ jQuery(document).ready(function () {
 	});
 
 	/* ------------------------------------------ */
-	/*   07 - ONEPAGE SCROLL
+	/*   08 - ONEPAGE SCROLL
 	/* ------------------------------------------ */
 	if (jQuery('body').hasClass('video-page') || jQuery('body').hasClass('gallery-page') || jQuery('body').hasClass('crew-page') || jQuery('body').hasClass('news-page')) {
 

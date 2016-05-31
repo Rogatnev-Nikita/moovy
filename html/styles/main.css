@@ -664,14 +664,34 @@ button:focus {
 	background-image: url(../images/gallery/gallery__bg_1--mobile.jpg);
 }
 .gallery-2 {
-	background-image: url(../images/gallery/gallery__bg_1--mobile.jpg);
+	background-image: url(../images/gallery/gallery__bg_2--mobile.jpg);
 }
 .gallery-3 {
-	background-image: url(../images/gallery/gallery__bg_1--mobile.jpg);
+	background-image: url(../images/gallery/gallery__bg_3--mobile.jpg);
+}
+.gallery-4 {
+	background-image: url(../images/gallery/gallery__bg_4--mobile.jpg);
+}
+.gallery-5 {
+	background-image: url(../images/gallery/gallery__bg_5--mobile.jpg);
+}
+.gallery-6 {
+	background-image: url(../images/gallery/gallery__bg_6--mobile.jpg);
+}
+.gallery-7 {
+	background-image: url(../images/gallery/gallery__bg_7--mobile.jpg);
+}
+.gallery-8 {
+	background-image: url(../images/gallery/gallery__bg_8--mobile.jpg);
 }
 .gallery-1:after,
 .gallery-2:after,
-.gallery-3:after {
+.gallery-3:after,
+.gallery-4:after,
+.gallery-5:after,
+.gallery-6:after,
+.gallery-7:after,
+.gallery-8:after {
 	position: absolute;
 	z-index: 0;
 	top: 0;
@@ -715,10 +735,25 @@ button:focus {
 		background-image: url(../images/gallery/gallery__bg_1.jpg);
 	}
 	.gallery-2 {
-		background-image: url(../images/gallery/gallery__bg_1.jpg);
+		background-image: url(../images/gallery/gallery__bg_2.jpg);
 	}
 	.gallery-3 {
-		background-image: url(../images/gallery/gallery__bg_1.jpg);
+		background-image: url(../images/gallery/gallery__bg_3.jpg);
+	}
+	.gallery-4 {
+		background-image: url(../images/gallery/gallery__bg_4.jpg);
+	}
+	.gallery-5 {
+		background-image: url(../images/gallery/gallery__bg_5.jpg);
+	}
+	.gallery-6 {
+		background-image: url(../images/gallery/gallery__bg_6.jpg);
+	}
+	.gallery-7 {
+		background-image: url(../images/gallery/gallery__bg_7.jpg);
+	}
+	.gallery-8 {
+		background-image: url(../images/gallery/gallery__bg_8.jpg);
 	}
 	.gallery-page #legal.main-footer__legal-hidden {
 		display: none;

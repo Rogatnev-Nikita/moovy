@@ -125,6 +125,19 @@ jQuery(document).ready(function () {
 		for (var i = 0; i < backgrounds.length; i++) {
 			navigation.eq(i).click(createHandler(i));
 		}
+
+		var i = 1;
+		setInterval(function () {
+			if (i < backgrounds.length) {
+				selectItem(i);
+				i = i + 1;
+			} else {
+				i = 0;
+				selectItem(i);
+				i = i + 1;
+			}
+		}, 2000);
+
 	}
 
 	/* ------------------------------------------ */

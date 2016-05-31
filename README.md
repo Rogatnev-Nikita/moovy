@@ -63,14 +63,13 @@ This exquisite single purpose theme is perfect for those who appreciate the usab
     /*  15 — MODALS             */
 
 ## JS structure
-    /*  01 — MENU OVERLAY & HAMBURGER ICON ACTIVE           */
+    /*  01 — MENU OVERLAY & HAMBURGER ICON ACTIVE               */
     /*  02 — LEGAL COLLAPSE - CHANGE DISPLAY OF THE BUTTON      */
     /*  03 — NEWS AND CREW HEADING SCROLL ANIMATION             */
     /*  04 — STOP VIDEO WHEN MODAL CLOSE                        */
-    /*  05 — READ MORE COLLAPSE - CHANGE DISPLAY OF THE BUTTON  */
-    /*  06 — HOME SLIDER                                        */
-    /*  07 — IMAGES MODAL AT NEWS PAGE                          */
-    /*  08 — ONEPAGE SCROLL                                     */
+    /*  05 — HOME SLIDER                                        */
+    /*  06 — IMAGES MODAL AT NEWS PAGE                          */
+    /*  07 — ONEPAGE SCROLL                                     */
 
 ## Sources & Credits
 * <strong>Font Awesome</strong>  

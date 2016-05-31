@@ -106,9 +106,11 @@ jQuery(document).ready(function () {
 	/* ------------------------------------------ */
 	/*  06 - HOME SLIDER
 	/* ------------------------------------------ */
-	if (jQuery('body').hasClass('home-page')) {
+	var backgrounds;
+	var body = jQuery('body');
+	if (body.hasClass('home-page')) {
 		if (window.matchMedia('(max-width: 767px)').matches) {
-			var backgrounds = [
+			backgrounds = [
 				'url(./images/home/home__bg_1--mobile.jpg)',
 				'url(./images/home/home__bg_2--mobile.jpg)',
 				'url(./images/home/home__bg_3--mobile.jpg)',
@@ -118,7 +120,7 @@ jQuery(document).ready(function () {
 				'url(./images/home/home__bg_7--mobile.jpg)'
 			];
 		} else {
-			var backgrounds = [
+			backgrounds = [
 				'url(./images/home/home__bg_1.jpg)',
 				'url(./images/home/home__bg_2.jpg)',
 				'url(./images/home/home__bg_3.jpg)',
@@ -128,43 +130,21 @@ jQuery(document).ready(function () {
 				'url(./images/home/home__bg_7.jpg)'
 			];
 		}
-		jQuery('body').css('background-image', backgrounds[0]);
-		jQuery(".slider-navigation-line:nth-child(1)").click(function () {
-			jQuery('body').css('background-image', backgrounds[0]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(1)").addClass('slider-navigation-line--active');
-		});
-		jQuery(".slider-navigation-line:nth-child(2)").click(function () {
-			jQuery('body').css('background-image', backgrounds[1]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(2)").addClass('slider-navigation-line--active');
-		});
-		jQuery(".slider-navigation-line:nth-child(3)").click(function () {
-			jQuery('body').css('background-image', backgrounds[2]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(3)").addClass('slider-navigation-line--active');
-		});
-		jQuery(".slider-navigation-line:nth-child(4)").click(function () {
-			jQuery('body').css('background-image', backgrounds[3]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(4)").addClass('slider-navigation-line--active');
-		});
-		jQuery(".slider-navigation-line:nth-child(5)").click(function () {
-			jQuery('body').css('background-image', backgrounds[4]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(5)").addClass('slider-navigation-line--active');
-		});
-		jQuery(".slider-navigation-line:nth-child(6)").click(function () {
-			jQuery('body').css('background-image', backgrounds[5]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(6)").addClass('slider-navigation-line--active');
-		});
-		jQuery(".slider-navigation-line:nth-child(7)").click(function () {
-			jQuery('body').css('background-image', backgrounds[6]);
-			jQuery(".slider-navigation-line").removeClass('slider-navigation-line--active');
-			jQuery(".slider-navigation-line:nth-child(7)").addClass('slider-navigation-line--active');
-		});
-
+		var navigation = jQuery(".slider-navigation-line");
+		var selectItem = function (index) {
+			body.css('background-image', backgrounds[index]);
+			navigation.removeClass('slider-navigation-line--active');
+			navigation.eq(index).addClass('slider-navigation-line--active');
+		};
+		var createHandler = function (index) {
+			return function () {
+				selectItem(index);
+			};
+		};
+		selectItem(0);
+		for (var i = 0; i < backgrounds.length; i++) {
+			navigation.eq(i).click(createHandler(i));
+		}
 	}
 
 	/* ------------------------------------------ */

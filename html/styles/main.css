@@ -343,6 +343,8 @@ button:focus {
 	display: -webkit-box;
 	display:         flex;
 
+	cursor: pointer;
+
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	-webkit-box-align: center;

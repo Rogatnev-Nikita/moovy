@@ -143,11 +143,9 @@ jQuery(document).ready(function () {
 	/* ------------------------------------------ */
 	/*   06 - IMAGES MODAL AT NEWS PAGE
 	/* ------------------------------------------ */
-	$(function () {
-		$('.collapse__gallery').on('click', function () {
-			$('.modal-box__image').attr('src', $(this).find('img').attr('src'));
-			$('#images').modal('show');
-		});
+	jQuery('.collapse__gallery-item').on('click', function () {
+		jQuery('.modal-box__image').attr('src', jQuery(this).attr('src'));
+		jQuery('#images').modal('show');
 	});
 
 	/* ------------------------------------------ */

@@ -17,6 +17,8 @@ Tags: bootstrap, entertainment, film, movie, trailer, video, showcase, tv, clean
 /*  07 — ONEPAGE SCROLL                                     */
 "use strict";
 
+var navi = 0;
+
 jQuery(document).ready(function () {
 
 	/* ------------------------------------------ */
@@ -112,6 +114,7 @@ jQuery(document).ready(function () {
 		}
 		var navigation = jQuery(".slider-navigation-line");
 		var selectItem = function (index) {
+			navi = index;
 			body.css('background-image', backgrounds[index]);
 			navigation.removeClass('slider-navigation-line--active');
 			navigation.eq(index).addClass('slider-navigation-line--active');
@@ -126,15 +129,14 @@ jQuery(document).ready(function () {
 			navigation.eq(i).click(createHandler(i));
 		}
 
-		var i = 1;
 		setInterval(function () {
-			if (i < backgrounds.length) {
-				selectItem(i);
-				i = i + 1;
+			if (navi < backgrounds.length) {
+				selectItem(navi);
+				navi = navi + 1;
 			} else {
-				i = 0;
-				selectItem(i);
-				i = i + 1;
+				navi = 0;
+				selectItem(navi);
+				navi = navi + 1;
 			}
 		}, 2000);
 

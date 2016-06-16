@@ -96,11 +96,13 @@ body {
 
 	height: 100vh;
 
-	-webkit-transition: all 0.5s linear;
-	        transition: all 0.5s linear;
-	/* Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)" */
+	-webkit-transition: background-image 0.5s linear;
+	   -moz-transition: background-image 0.5s linear;
+	        transition: background-image 0.5s linear;
 
 	background-color: rgba(0, 0, 0, 1);
+	/* Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)" */
+	background-image: url("./images/home/home__bg_1.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;

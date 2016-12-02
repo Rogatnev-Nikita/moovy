@@ -1,6 +1,6 @@
 # MOOVY — Responsive HTML5 Template
 [![MOOVY][2]][1]
-  [1]: http://rogatnev-nikita.github.io/moovy/html/
+  [1]: http://rogatnev.ru/moovy/html/
   [2]: dev/preview/preview-1.png (MOOVY demo)
 MOOVY – emotional and laconic responsive HTML5 theme built specifically for film campaigns and movie marketing (i.e. “Official Movie Site”). In addition to the promotion of the film, also may be used as a showreel of various projects.
 
